@@ -4,6 +4,9 @@ date: 2018-04-03 12:04:34
 tags:
 - 软件
 - Markdown
+categories:
+- 计算机 
+- 软件
 ---
 
 ![typora](typora-into/typora.jpg)
