@@ -64,9 +64,9 @@ categories:
 - 输入：$x \in \mathcal{X}$
 - 输出：$y \in \mathcal{Y}$
 - 目标函数：$f: \mathcal{X} \rightarrow \mathcal{Y}$
-- 数据：$\mathcal{D} =\{(x_1,y_1),(x_2,y_2),...,(x_N,y_N)\}$
+- 数据：$\mathcal{D} = $ { $(x_1,y_1),(x_2,y_2),...,(x_N,y_N) $ }
 - 假说：$g:\mathcal{X} \rightarrow \mathcal{Y}$
-- 假说集：$g \in \mathcal{H} = \{h_k\}$
+- 假说集：$g \in \mathcal{H} = $ { $h_k$ }
 - 学习算法：$\mathcal{A}$
 - 学习模型：$\mathcal{A}$ and $\mathcal{H}$
 
