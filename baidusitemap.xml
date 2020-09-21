@@ -140,6 +140,29 @@
 
     
   <url>
+    <loc>http://rosecabbage.cc/2018/04/08/MOP/</loc>
+    <lastmod>2020-09-21T07:41:23.931Z</lastmod>
+    <data>
+        <display>
+        <title>多目标规划方法</title>
+        <pubTime>2018-04-08T04:58:39.000Z</pubTime>
+        
+        <tag>规划</tag>
+         
+         
+           
+             
+              <breadCrumb title="数学" url="http://rosecabbage.cc/categories/%E6%95%B0%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="优化" url="http://rosecabbage.cc/categories/%E6%95%B0%E5%AD%A6/%E4%BC%98%E5%8C%96/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/</loc>
     <lastmod>2020-09-21T07:41:23.931Z</lastmod>
     <data>
@@ -158,29 +181,6 @@
           
              
               <breadCrumb title="机器学习" url="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://rosecabbage.cc/2018/04/08/MOP/</loc>
-    <lastmod>2020-09-21T07:41:23.931Z</lastmod>
-    <data>
-        <display>
-        <title>多目标规划方法</title>
-        <pubTime>2018-04-08T04:58:39.000Z</pubTime>
-        
-        <tag>规划</tag>
-         
-         
-           
-             
-              <breadCrumb title="数学" url="http://rosecabbage.cc/categories/%E6%95%B0%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="优化" url="http://rosecabbage.cc/categories/%E6%95%B0%E5%AD%A6/%E4%BC%98%E5%8C%96/"/>
           
         </display>
     </data>
