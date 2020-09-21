@@ -1,95 +1,183 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[transfer_to_mac]]></title>
-    <url>%2F2020%2F09%2F21%2Ftransfer-to-mac%2F</url>
-    <content type="text"><![CDATA[This is a test post to check the transfer.2020-09-21]]></content>
-  </entry>
-  <entry>
-    <title><![CDATA[机器学习基石笔记（三）]]></title>
-    <url>%2F2018%2F04%2F10%2FMachine-Learning-Foundations-3%2F</url>
-    <content type="text"><![CDATA[课程内容来自于国立台湾大学-林轩田-機器學習基石 视频内容 機器學習基石，图片内容来源于视频课件 各式各样的机器学习问题** 二元分类（是非题）Binary Classification Problems 多分类问题Multiclass Classification 根据大小和重量判别硬币的种类 判断写的数字 根据图片判断水果种类 给邮件分类（重要、社交、垃圾等等） 回归分析：病人的康复时间预测 二元分类：病人是否患病 多元分类：病人患病的种类 回归分析：病人康复的时间 结构学习：句子词性标注 在不同的输出空间上进行学习 二元分类：$\mathcal{Y} = $ {$-1,+1 $} 多元分类：$\mathcal{Y} =$ { $1,2,…,K$ } 回归分析：$\mathcal{Y} = \mathbb{R}$ 结构学习：$\mathcal{Y} =$ 结构 ……还有更多！ 核心工具：二元分类与回归分析 监督学习与非监督学习 硬币分类问题中，有硬币的数据和硬币的种类，这就是监督学习 如果不告诉硬币的种类，就是非监督学习（同样可以进行学习——聚类） 非监督学习 聚类：不知道类别去进行分类 密度分析：判断点在哪些位置比较稠密，哪些位置比较稀疏 异常值检验：判断点集中的异常点 ……还有更多！ 半监督学习 Facebook添加脸部标签 给药物的数据添加标签 强化学习 用奖励和惩罚来告诉算法是好还是不好 例子： 线上广告系统 牌类游戏（策略） 在不同的资料的标记中学习 监督学习：全部的$y_n$ 非监督学习：没有$y_n$ 半监督学习：部分的$y_n$ 强化学习：辅助的$y_n$($\widetilde{y}_n$) 核心方法：监督学习 批量学习（Batch Learning）一次性批量输入给学习算法 垃圾邮件的过滤器 癌症检测 病人的分批 在线算法（Online Learning）循序学习，不断的修正算法，进行优化 PLA也可以以在线学习的方法呈现 强化学习通常是用在线算法实现 主动学习机器有问问题的能力 机器在问问题的时候是有技巧的，有可能会使得算法的优化效率更高 不同的输入形式 具体的 原始的 抽象的]]></content>
+<search> 
+  
+    
+    <entry>
+      <title>transfer_to_mac</title>
+      <link href="/2020/09/21/transfer-to-mac/"/>
+      <url>/2020/09/21/transfer-to-mac/</url>
+      <content type="html"><![CDATA[<p>This is a test post to check the transfer.<br>2020-09-21</p>]]></content>
+      
+      
+    </entry>
+    
+    <entry>
+      <title>机器学习基石笔记（三）</title>
+      <link href="/2018/04/10/Machine-Learning-Foundations-3/"/>
+      <url>/2018/04/10/Machine-Learning-Foundations-3/</url>
+      <content type="html"><![CDATA[<blockquote><p>课程内容来自于国立台湾大学-林轩田-機器學習基石</p><p>视频内容 <a href="https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf">機器學習基石</a>，图片内容来源于视频课件</p></blockquote><a id="more"></a><p>各式各样的机器学习问题**</p><h2 id="二元分类（是非题）"><a href="#二元分类（是非题）" class="headerlink" title="二元分类（是非题）"></a>二元分类（是非题）</h2><p>Binary Classification Problems</p><p><img src="/2018/04/10/Machine-Learning-Foundations-3/TIM%E6%88%AA%E5%9B%BE20180410211123.png" alt="TIM截图20180410211123"></p><h2 id="多分类问题"><a href="#多分类问题" class="headerlink" title="多分类问题"></a>多分类问题</h2><p>Multiclass Classification</p><p><img src="/2018/04/10/Machine-Learning-Foundations-3/TIM%E6%88%AA%E5%9B%BE20180410211243.png" alt="TIM截图20180410211243"></p><blockquote><ul><li>根据大小和重量判别硬币的种类</li><li>判断写的数字</li><li>根据图片判断水果种类</li><li>给邮件分类（重要、社交、垃圾等等）</li></ul></blockquote><h2 id="回归分析：病人的康复时间预测"><a href="#回归分析：病人的康复时间预测" class="headerlink" title="回归分析：病人的康复时间预测"></a>回归分析：病人的康复时间预测</h2><ul><li>二元分类：病人是否患病</li><li>多元分类：病人患病的种类</li><li>回归分析：病人康复的时间</li></ul><h2 id="结构学习：句子词性标注"><a href="#结构学习：句子词性标注" class="headerlink" title="结构学习：句子词性标注"></a>结构学习：句子词性标注</h2><p><img src="/2018/04/10/Machine-Learning-Foundations-3/TIM%E6%88%AA%E5%9B%BE20180410212222.png" alt="TIM截图20180410212222"></p><h2 id="在不同的输出空间上进行学习"><a href="#在不同的输出空间上进行学习" class="headerlink" title="在不同的输出空间上进行学习"></a>在不同的输出空间上进行学习</h2><ul><li>二元分类：$\mathcal{Y} = $ {$-1,+1 $}</li><li>多元分类：$\mathcal{Y} =$  { $1,2,…,K$ }</li><li>回归分析：$\mathcal{Y} = \mathbb{R}$</li><li>结构学习：$\mathcal{Y} =$ 结构</li><li>……还有更多！</li></ul><p><strong>核心工具：二元分类与回归分析</strong></p><h2 id="监督学习与非监督学习"><a href="#监督学习与非监督学习" class="headerlink" title="监督学习与非监督学习"></a>监督学习与非监督学习</h2><blockquote><p>硬币分类问题中，有硬币的数据和硬币的种类，这就是监督学习</p><p>如果不告诉硬币的种类，就是非监督学习（同样可以进行学习——聚类）</p></blockquote><p><img src="/2018/04/10/Machine-Learning-Foundations-3/TIM%E6%88%AA%E5%9B%BE20180410213358.png" alt="TIM截图20180410213358"></p><h3 id="非监督学习"><a href="#非监督学习" class="headerlink" title="非监督学习"></a>非监督学习</h3><ul><li>聚类：不知道类别去进行分类</li><li>密度分析：判断点在哪些位置比较稠密，哪些位置比较稀疏</li><li>异常值检验：判断点集中的异常点</li><li>……还有更多！</li></ul><h2 id="半监督学习"><a href="#半监督学习" class="headerlink" title="半监督学习"></a>半监督学习</h2><p><img src="/2018/04/10/Machine-Learning-Foundations-3/TIM%E6%88%AA%E5%9B%BE20180410215715.png" alt="TIM截图20180410215715"></p><blockquote><ul><li>Facebook添加脸部标签</li><li>给药物的数据添加标签</li></ul></blockquote><h2 id="强化学习"><a href="#强化学习" class="headerlink" title="强化学习"></a>强化学习</h2><blockquote><p>用奖励和惩罚来告诉算法是好还是不好</p><p>例子：</p><ul><li>线上广告系统</li><li>牌类游戏（策略）</li></ul></blockquote><h2 id="在不同的资料的标记中学习"><a href="#在不同的资料的标记中学习" class="headerlink" title="在不同的资料的标记中学习"></a>在不同的资料的标记中学习</h2><ul><li>监督学习：全部的$y_n$</li><li>非监督学习：没有$y_n$</li><li>半监督学习：部分的$y_n$</li><li>强化学习：辅助的$y_n$($\widetilde{y}_n$)</li></ul><p><strong>核心方法：监督学习</strong></p><h2 id="批量学习（Batch-Learning）"><a href="#批量学习（Batch-Learning）" class="headerlink" title="批量学习（Batch Learning）"></a>批量学习（Batch Learning）</h2><p><strong>一次性批量输入</strong>给学习算法</p><ul><li>垃圾邮件的过滤器</li><li>癌症检测</li><li>病人的分批</li></ul><h2 id="在线算法（Online-Learning）"><a href="#在线算法（Online-Learning）" class="headerlink" title="在线算法（Online Learning）"></a>在线算法（Online Learning）</h2><p><strong>循序学习</strong>，不断的修正算法，进行优化</p><p>PLA也可以以在线学习的方法呈现</p><p>强化学习通常是用在线算法实现</p><h2 id="主动学习"><a href="#主动学习" class="headerlink" title="主动学习"></a>主动学习</h2><p>机器有<strong>问问题</strong>的能力</p><p>机器在问问题的时候是有技巧的，有可能会使得算法的优化效率更高</p><h2 id="不同的输入形式"><a href="#不同的输入形式" class="headerlink" title="不同的输入形式"></a>不同的输入形式</h2><ul><li>具体的</li><li>原始的</li><li>抽象的</li></ul>]]></content>
+      
       <categories>
-        <category>计算机</category>
-        <category>机器学习</category>
+          
+          <category> 计算机 </category>
+          
+          <category> 机器学习 </category>
+          
       </categories>
-      <tags>
-        <tag>机器学习</tag>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[机器学习基石笔记（二）]]></title>
-    <url>%2F2018%2F04%2F10%2FMachine-Learning-Foundations-2%2F</url>
-    <content type="text"><![CDATA[课程内容来自于国立台湾大学-林轩田-機器學習基石 视频内容 機器學習基石，图片内容来源于视频课件 机器如何学会说是还是否 感知器例：要不要给一个用户信用卡： $x =(x_1,x_2,…,x_d)$ 表示用户的特征，计算出一个权重 如果$\sum \limits_{i=1}^{d} w_Ix_i&gt;$ threshold 就给信用卡 $\mathcal{Y}$ : {$+1(good),-1(bad)$}，0 ignored $$h(x) = sign((\sum \limits_{i=1}^dw_ix_i) - threshold)$$ $h(x)$ 是感知器（Perceptron） 二维情况： 也称为线性分类器 感知器学习算法 在$\mathcal{H}$中找到$g$使得： $$g(x_n) = f(x_n) = y_n$$ 这不是一件容易的事情，因为有无数条可能的直线 思路： 我们从$g_0$开始 修正这条直线 直到我们觉得这条线足够好 具体实现： 在每一轮中都做如下步骤 找到犯错的$w_t$：$(x_{n(t)},y_{n(t)})$ $$sign(W_t^ \mathrm{T}x_{n(t)}) \neq y_{n(t)}$$ 修正错误： $$W_{t+1} = W_t + y_{n(t)}x_{n(t)}$$ 直到不再犯错 返回$W_{PLA}$ PLA指的是Perceptron Learning Algorithm 一种常见的PLA的实现方法： 问题：PLA算法是不是一定会终止？终止的时候$g \approx f$？ 线性可分(Linear Separability) 线性可分等价于存在$W_f$使得$y_n = sign(W_f^ \mathrm{T} x_n)$ 上面的过程说明了向量的内积原来越大，但是在计算的过程中尚未解决向量长度的问题，因此内积的增大并不一定等价于两者越来越接近。其中第一个式子表示理想的$W_f$能够准确的判别每一个点，因此在我们犯错的点也可以正确的判别。 后面的过程需要用到我们的更新条件： $$sign(W_t^\mathrm{T}x_{n(t)}) \ne y_{n(t)} \Leftrightarrow y_{n(t)}W_t^\mathrm{T}x_{n(t)} \le 0$$ 如果我们从$W_0 = 0$开始，在经过了$T$次的错误修正后，存在下面的不等式： $$\frac{W_f^\mathrm{T}}{||W_f||} \frac{W_T}{||W_T||} \ge \sqrt{T} \cdot constant $$ 所以PLA一定会停止 更多关于PLA 优点 可以在任何维度进行计算 缺点 需要先假设是线性可分的 就算知道是线性可分的，不知道多久会停止 如果我们的资料不是线性可分的？ 对于有噪声的数据 首先假设噪声是小的 如果这样，$g \approx f \Leftrightarrow y_n = g(x_n)$ 定义一个最好的函数：使得犯错误的情况最少 调整PLA算法（口袋演算法）口袋演算法——Pocket Algorithm]]></content>
+      
+      
+        <tags>
+            
+            <tag> 机器学习 </tag>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>机器学习基石笔记（二）</title>
+      <link href="/2018/04/10/Machine-Learning-Foundations-2/"/>
+      <url>/2018/04/10/Machine-Learning-Foundations-2/</url>
+      <content type="html"><![CDATA[<blockquote><p>课程内容来自于国立台湾大学-林轩田-機器學習基石</p><p>视频内容 <a href="https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf">機器學習基石</a>，图片内容来源于视频课件</p></blockquote><a id="more"></a><p><strong>机器如何学会说是还是否</strong></p><h2 id="感知器"><a href="#感知器" class="headerlink" title="感知器"></a>感知器</h2><p>例：要不要给一个用户信用卡：</p><ul><li><p>$x =(x_1,x_2,…,x_d)$ 表示用户的特征，计算出一个权重</p></li><li><p>如果$\sum \limits_{i=1}^{d} w_Ix_i&gt;$ threshold 就给信用卡</p></li><li><p>$\mathcal{Y}$ : {$+1(good),-1(bad)$}，0 ignored</p><p>$$h(x) = sign((\sum \limits_{i=1}^dw_ix_i) - threshold)$$</p></li><li><p>$h(x)$ 是感知器（Perceptron）</p></li></ul><p>二维情况：<br><img src="/2018/04/10/Machine-Learning-Foundations-2/TIM%E6%88%AA%E5%9B%BE20180410135857.png" alt="TIM截图20180410135857"></p><p>也称为<strong>线性分类器</strong></p><h2 id="感知器学习算法"><a href="#感知器学习算法" class="headerlink" title="感知器学习算法"></a>感知器学习算法</h2><ul><li>在$\mathcal{H}$中找到$g$使得：</li></ul><p>$$g(x_n) = f(x_n) = y_n$$</p><ul><li><p>这不是一件容易的事情，因为有无数条可能的直线</p></li><li><p>思路：</p><ul><li>我们从$g_0$开始</li><li>修正这条直线</li><li>直到我们觉得这条线足够好</li></ul></li><li><p>具体实现：</p><ul><li><p>在每一轮中都做如下步骤</p></li><li><p>找到犯错的$w_t$：$(x_{n(t)},y_{n(t)})$</p><p>$$sign(W_t^ \mathrm{T}x_{n(t)}) \neq y_{n(t)}$$</p></li><li><p>修正错误：</p><p>$$W_{t+1} = W_t + y_{n(t)}x_{n(t)}$$</p><p><img src="/2018/04/10/Machine-Learning-Foundations-2/TIM%E6%88%AA%E5%9B%BE20180410141353.png" alt="TIM截图20180410141353"></p></li><li><p>直到不再犯错</p></li><li><p>返回$W_{PLA}$</p></li></ul></li></ul><p>PLA指的是Perceptron Learning Algorithm</p><p>一种常见的PLA的实现方法：</p><p><img src="/2018/04/10/Machine-Learning-Foundations-2/TIM%E6%88%AA%E5%9B%BE20180410141713.png" alt="TIM截图20180410141713"></p><p>问题：PLA算法是不是一定会终止？终止的时候$g \approx f$？</p><h2 id="线性可分-Linear-Separability"><a href="#线性可分-Linear-Separability" class="headerlink" title="线性可分(Linear Separability)"></a>线性可分(Linear Separability)</h2><p> <img src="/2018/04/10/Machine-Learning-Foundations-2/TIM%E6%88%AA%E5%9B%BE20180410150736.png" alt="TIM截图20180410150736"></p><p>线性可分等价于存在$W_f$使得$y_n = sign(W_f^ \mathrm{T} x_n)$</p><p><img src="/2018/04/10/Machine-Learning-Foundations-2/TIM%E6%88%AA%E5%9B%BE20180410151305.png" alt="TIM截图20180410151305"></p><p>上面的过程说明了向量的内积原来越大，但是在计算的过程中尚未解决向量长度的问题，因此内积的增大并不一定等价于两者越来越接近。其中第一个式子表示理想的$W_f$能够准确的判别每一个点，因此在我们犯错的点也可以正确的判别。</p><p>后面的过程需要用到我们的更新条件：</p><p>$$sign(W_t^\mathrm{T}x_{n(t)}) \ne y_{n(t)} \Leftrightarrow y_{n(t)}W_t^\mathrm{T}x_{n(t)} \le 0$$</p><p><img src="/2018/04/10/Machine-Learning-Foundations-2/TIM%E6%88%AA%E5%9B%BE20180410152435.png" alt="TIM截图20180410152435"></p><p>如果我们从$W_0 = 0$开始，在经过了$T$次的错误修正后，存在下面的不等式：</p><p>$$\frac{W_f^\mathrm{T}}{||W_f||} \frac{W_T}{||W_T||} \ge \sqrt{T} \cdot constant $$</p><p>所以<strong>PLA一定会停止</strong></p><h2 id="更多关于PLA"><a href="#更多关于PLA" class="headerlink" title="更多关于PLA"></a>更多关于PLA</h2><ul><li><p>优点</p><p>可以在任何维度进行计算</p></li><li><p>缺点</p><ul><li>需要先假设是线性可分的</li><li>就算知道是线性可分的，不知道多久会停止</li></ul></li></ul><p>如果我们的资料不是线性可分的？</p><h2 id="对于有噪声的数据"><a href="#对于有噪声的数据" class="headerlink" title="对于有噪声的数据"></a>对于有噪声的数据</h2><ul><li><p>首先假设噪声是小的</p></li><li><p>如果这样，$g \approx f \Leftrightarrow y_n = g(x_n)$</p></li><li><p>定义一个最好的函数：使得犯错误的情况最少</p><p><img src="/2018/04/10/Machine-Learning-Foundations-2/TIM%E6%88%AA%E5%9B%BE20180410162930.png" alt="TIM截图20180410162930"></p></li></ul><h2 id="调整PLA算法（口袋演算法）"><a href="#调整PLA算法（口袋演算法）" class="headerlink" title="调整PLA算法（口袋演算法）"></a>调整PLA算法（口袋演算法）</h2><p>口袋演算法——Pocket Algorithm</p><p><img src="/2018/04/10/Machine-Learning-Foundations-2/TIM%E6%88%AA%E5%9B%BE20180410163312.png" alt="TIM截图20180410163312"></p>]]></content>
+      
       <categories>
-        <category>计算机</category>
-        <category>机器学习</category>
+          
+          <category> 计算机 </category>
+          
+          <category> 机器学习 </category>
+          
       </categories>
-      <tags>
-        <tag>机器学习</tag>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[机器学习基石笔记（一）]]></title>
-    <url>%2F2018%2F04%2F10%2FMachine-Learning-Foundations-1%2F</url>
-    <content type="text"><![CDATA[课程内容来自于国立台湾大学-林轩田-機器學習基石 视频内容 機器學習基石，图片内容来源于视频课件 基本架构： When Can Machines Learn? Why Can Machines Learn? How Can Machines Learn? How Can Machines Learn Better? 什么是机器学习机器学习：我们用电脑来模仿人学习的过程（通过观察经过一番处理变成有用的技巧） 技巧：增进某一种表现 为什么使用机器学习？例子：如何辨识一棵树？ 通过观察很多的树得到技巧（辨识树） 机器学习是取代复杂系统的一种方式 机器学习的三个关键 要有表现可以增进（有一些模式可以被学习） 没有程序化的定义 有关于这个模式的数据 机器学习的应用 例：我们如何确定会不会喜欢一部电影 观看者描述为一串数字（对于各类电影的喜好） 电影也描述为一串数字（表示是何种类型的电影） 作内积，看结果的大小表示是否吻合 从这些rating反推电影和人的特征是什么 学习的组成部分基本符号： 输入：$x \in \mathcal{X}$ 输出：$y \in \mathcal{Y}$ 目标函数：$f: \mathcal{X} \rightarrow \mathcal{Y}$ 数据：$\mathcal{D} = $ { $(x_1,y_1),(x_2,y_2),…,(x_N,y_N) $ } 假说：$g:\mathcal{X} \rightarrow \mathcal{Y}$ 假说集：$g \in \mathcal{H} = $ { $h_k$ } 学习算法：$\mathcal{A}$ 学习模型：$\mathcal{A}$ and $\mathcal{H}$ 注意： 目标函数$f$是未知的 $g \approx f$，但很有可能$f \neq g$ 机器学习：从资料出发，计算出假说$g$，并且希望他很接近目标函数$f$ 机器学习和相关领域机器学习和数据挖掘 非常相似，取决于数据挖掘的目标是否与机器学习的假说相同 机器学习和人工智能 机器学习是实现人工智能的一种方法 机器学习和统计 统计是实现机器学习的一种方法 统计学会专注于数学上的推论]]></content>
+      
+      
+        <tags>
+            
+            <tag> 机器学习 </tag>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>机器学习基石笔记（一）</title>
+      <link href="/2018/04/10/Machine-Learning-Foundations-1/"/>
+      <url>/2018/04/10/Machine-Learning-Foundations-1/</url>
+      <content type="html"><![CDATA[<blockquote><p>课程内容来自于国立台湾大学-林轩田-機器學習基石</p><p>视频内容 <a href="https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf">機器學習基石</a>，图片内容来源于视频课件</p></blockquote><a id="more"></a><p>基本架构：</p><ul><li>When Can Machines Learn?</li><li>Why Can Machines Learn?</li><li>How Can Machines Learn?</li><li>How Can Machines Learn <strong>Better</strong>?</li></ul><h2 id="什么是机器学习"><a href="#什么是机器学习" class="headerlink" title="什么是机器学习"></a>什么是机器学习</h2><p><strong>机器学习</strong>：我们用电脑来模仿人学习的过程（通过观察经过一番处理变成有用的技巧）</p><p><strong>技巧</strong>：增进某一种表现</p><p><img src="/2018/04/10/Machine-Learning-Foundations-1/TIM%E6%88%AA%E5%9B%BE20180409152956.png" alt="TIM截图20180409152956"></p><h2 id="为什么使用机器学习？"><a href="#为什么使用机器学习？" class="headerlink" title="为什么使用机器学习？"></a>为什么使用机器学习？</h2><p>例子：如何辨识一棵树？</p><ul><li>通过观察很多的树得到技巧（辨识树）</li></ul><p>机器学习是取代复杂系统的一种方式</p><p><img src="/2018/04/10/Machine-Learning-Foundations-1/TIM%E6%88%AA%E5%9B%BE20180409153617.png" alt="TIM截图20180409153617"></p><p>机器学习的三个关键</p><ul><li>要有表现可以增进（有一些模式可以被学习）</li><li>没有程序化的定义</li><li>有关于这个模式的数据</li></ul><h2 id="机器学习的应用"><a href="#机器学习的应用" class="headerlink" title="机器学习的应用"></a>机器学习的应用</h2><p><img src="/2018/04/10/Machine-Learning-Foundations-1/TIM%E6%88%AA%E5%9B%BE20180409201454.png" alt="TIM截图20180409201454"></p><p>例：我们如何确定会不会喜欢一部电影</p><ul><li>观看者描述为一串数字（对于各类电影的喜好）</li><li>电影也描述为一串数字（表示是何种类型的电影）</li><li>作内积，看结果的大小表示是否吻合</li><li>从这些rating反推电影和人的特征是什么</li></ul><h2 id="学习的组成部分"><a href="#学习的组成部分" class="headerlink" title="学习的组成部分"></a>学习的组成部分</h2><p><strong>基本符号</strong>：</p><ul><li>输入：$x \in \mathcal{X}$</li><li>输出：$y \in \mathcal{Y}$</li><li>目标函数：$f: \mathcal{X} \rightarrow \mathcal{Y}$</li><li>数据：$\mathcal{D} = $ { $(x_1,y_1),(x_2,y_2),…,(x_N,y_N) $ }</li><li>假说：$g:\mathcal{X} \rightarrow \mathcal{Y}$</li><li>假说集：$g \in \mathcal{H} = $ { $h_k$ }</li><li>学习算法：$\mathcal{A}$</li><li>学习模型：$\mathcal{A}$ and $\mathcal{H}$</li></ul><p>注意：</p><ul><li>目标函数$f$是未知的</li><li>$g \approx f$，但很有可能$f \neq g$</li></ul><p><strong>机器学习</strong>：从资料出发，计算出假说$g$，并且希望他很接近目标函数$f$</p><h2 id="机器学习和相关领域"><a href="#机器学习和相关领域" class="headerlink" title="机器学习和相关领域"></a>机器学习和相关领域</h2><h3 id="机器学习和数据挖掘"><a href="#机器学习和数据挖掘" class="headerlink" title="机器学习和数据挖掘"></a>机器学习和数据挖掘</h3><p><img src="/2018/04/10/Machine-Learning-Foundations-1/TIM%E6%88%AA%E5%9B%BE20180409213350.png" alt="TIM截图20180409213350"></p><p>非常相似，取决于数据挖掘的目标是否与机器学习的假说相同</p><h3 id="机器学习和人工智能"><a href="#机器学习和人工智能" class="headerlink" title="机器学习和人工智能"></a>机器学习和人工智能</h3><p><img src="/2018/04/10/Machine-Learning-Foundations-1/TIM%E6%88%AA%E5%9B%BE20180409213527.png" alt="TIM截图20180409213527"></p><ul><li>机器学习是实现人工智能的一种方法</li></ul><h3 id="机器学习和统计"><a href="#机器学习和统计" class="headerlink" title="机器学习和统计"></a>机器学习和统计</h3><p><img src="/2018/04/10/Machine-Learning-Foundations-1/TIM%E6%88%AA%E5%9B%BE20180409213628.png" alt="TIM截图20180409213628"></p><ul><li>统计是实现机器学习的一种方法</li><li>统计学会专注于数学上的推论</li></ul>]]></content>
+      
       <categories>
-        <category>计算机</category>
-        <category>机器学习</category>
+          
+          <category> 计算机 </category>
+          
+          <category> 机器学习 </category>
+          
       </categories>
-      <tags>
-        <tag>机器学习</tag>
-        <tag>笔记</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[多目标规划方法]]></title>
-    <url>%2F2018%2F04%2F08%2FMOP%2F</url>
-    <content type="text"><![CDATA[多目标规划是数学规划的一个分支，研究多于一个的目标函数在给定区域上的最优化，通常记为MOP(multi-objective programming)。1896年法国经济学家 V.帕累托最早研究不可比较目标的优化问题，之后数学家做了深入的探讨，但是尚未有一个完全令人满意的定义。 求解多目标规划的方法大体上有下面几种： 化多为少的方法，把多目标化为比较容易求解的单目标或者双目标，如主要目标法、线性加权法、理想点法。 分层序列法，把目标按照其重要性给出一个序列，每次都在前一目标最优解集内求下一个目标最优解，直到求出共同的最优解。 修正单纯形法 层次分析法，是一种定性与定量相结合的多目标决策与分析方法。 多目标规划及其非劣解和单目标的规划问题比较相似，都是由目标函数和约束条件组成的，但是多目标规划问题的目标函数大于一个，可以表示为如下形式M$$\max(\min)Z=F(X) $$$$s.t. \quad \Phi(X) \leq G$$ 有n个决策变量，k个目标函数，m个约束方程，则： $Z=F(X)$ 是k维函数向量 $\Phi(X)$是m维函数向量 $G$是m维函数向量 多目标规划问题的求解不能只追求一个目标的最优化，而不顾其他的目标。 对于多目标规划问题，求解就意味着需要作出下面的复合选择： 每一个目标函数取什么值，原问题可以得到最满意的解决？ 每一个决策变量取什么值，原问题可以得到最满意的解决？ 非劣解指的是，方案之间无法确定优劣（目标函数值互有较优值），但是又没有比他们更好的其他方案，因此他们就被成为多目标规划问题的非劣解或有效解，其余的方案都称为劣解。 当目标函数处于冲突状态的时候，就不会存在使得所有目标函数同时达到最大或最小值的最优解，于是我们只能寻求非劣解（又称非支配解或帕累托解） 多目标规划求解技术为了求得非劣解，我们常常需要将多目标规划问题转化为单目标规划问题去解决，实现这种转化有如下的建模方法 效用最优化模型 罚款模型 约束模型 目标达到法 目标规划模型 效用最优化模型（线性加权法）规划问题的目标函数可以通过一定的方式进行求和运算，这种方法将一系列的目标函数与效用函数建立相关关系，各目标之间通过效用函数协调，使多目标规划问题转化为传统的单目标规划问题。$$\max Z=\Psi(X)$$$$s.t. \quad \Phi(X) \leq G$$$\Psi$是与各目标函数相关的效应函数的和函数 在用效用函数作为规划目标的时候，需要确定一组权值$\lambda_i$来反映原问题中各目标函数在总体目标中的权重。 罚款模型（理想点法）规划决策者对每一个目标函数都能提出所期望的值（或称满意值） 通过比较实际值$f_i$与期望值$f_i^{*}$之间的偏差来选择问题的解，数学表达式如下: $$\min Z = \Sigma_{i=1}^k \lambda_i (f_i-f_i^{*})^2 $$$$\Phi_i(x_1,x_2,…,x_n) \leq g_i(i=1,2,…,m)$$ 约束模型（极大极小法）若规划问题的某一目标可以给出一个可供选择的范围，则该目标就可以作为约束条件而被排除出目标组，进入约束条件组中。 例如，除了第一个目标外，其余目标都可以提出一个可供选择的范围，那么这个多目标规划问题就可以转化为单目标规划问题：$$\max(\min)Z=f_1(x_1,x_2,…,x_n)$$$$\varphi_i(x_1,x_2,…,x_n) \leq g_i(x_1,x_2,..,x_n) $$$$f_j^{\min} \leq f_j \leq f_j^{\max}$$ 目标到达法在求解之前先设计与目标函数相应的一组目标值理想化的期望目标$f_i^{*}(i=1,2,…,k)$ 每一个目标对应的权重系数为$\omega^{*}_i(i=1,2,…,k)$ 松弛因子为$\gamma$ 那么，多目标规划问题就转化为：$$\min \limits_{X,\gamma} \gamma $$$$\varphi_i(X) \leq 0(i=1,2,…,k)$$$$f_i(X)-\omega_i\gamma \leq f_i^*(i=1,2,…,k)$$ 目标规划模型（目标规划法）首先需要预先确定各个目标的期望值$f_i^{*}$同时给每一个目标赋予一个优先因子和权系数，假定有$K$个目标，$L$个优先级($L \leq K$)，目标规划模型的数学形式为：$$\min Z = \sum \limits_{l=1}^{L}p_l \sum \limits_{k=1}^{K}(\omega_{lk}^-d_k^-+\omega_{lk}^+d_k^+)$$$$\varphi_i(x_1,x_2,…,x_n) \leq g_i(i=1,2,…,m)$$ $$f_i+d_i^{-}-d_i^{+} = f_i^{*}(i=1,2,…,K)$$其中， $d_i^+$和$d_i^-$ 分别表示与$f_i$相应的、与$f_i^*$相比的目标超过值和不足值，即正、负偏差变量 $p_l$表示第$l$个优先级 $\omega_{lk}^-$、$\omega_{lk}^+$表示在同一优先级$p_l$中，不同目标的正、负偏差变量的权系数]]></content>
+      
+      
+        <tags>
+            
+            <tag> 机器学习 </tag>
+            
+            <tag> 笔记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>多目标规划方法</title>
+      <link href="/2018/04/08/MOP/"/>
+      <url>/2018/04/08/MOP/</url>
+      <content type="html"><![CDATA[<blockquote><p>多目标规划是数学规划的一个分支，研究<strong>多于一个的目标函数</strong>在<strong>给定区域</strong>上的最优化，通常记为MOP(multi-objective programming)。1896年法国经济学家 V.帕累托最早研究不可比较目标的优化问题，之后数学家做了深入的探讨，但是<strong>尚未有一个完全令人满意的定义</strong>。</p></blockquote><a id="more"></a><p>求解多目标规划的方法大体上有下面几种：</p><ul><li><strong>化多为少</strong>的方法，把多目标化为比较容易求解的单目标或者双目标，如主要目标法、线性加权法、理想点法。</li><li><strong>分层序列法</strong>，把目标按照其重要性给出一个序列，每次都在前一目标最优解集内求下一个目标最优解，直到求出共同的最优解。</li><li><strong>修正单纯形法</strong></li><li><strong>层次分析法</strong>，是一种定性与定量相结合的多目标决策与分析方法。</li></ul><h2 id="多目标规划及其非劣解"><a href="#多目标规划及其非劣解" class="headerlink" title="多目标规划及其非劣解"></a>多目标规划及其非劣解</h2><p>和单目标的规划问题比较相似，都是由目标函数和约束条件组成的，但是多目标规划问题的目标函数大于一个，可以表示为如下形式M<br>$$\max(\min)Z=F(X) $$<br>$$s.t. \quad \Phi(X) \leq G$$</p><p>有n个决策变量，k个目标函数，m个约束方程，则：</p><ul><li>$Z=F(X)$ 是k维函数向量</li><li>$\Phi(X)$是m维函数向量</li><li>$G$是m维函数向量</li></ul><p>多目标规划问题的求解不能只追求一个目标的最优化，而不顾其他的目标。</p><p>对于多目标规划问题，求解就意味着需要作出下面的复合选择：</p><ul><li>每一个目标函数取什么值，原问题可以得到最满意的解决？</li><li>每一个决策变量取什么值，原问题可以得到最满意的解决？</li></ul><p>非劣解指的是，方案之间无法确定优劣（目标函数值互有较优值），但是又没有比他们更好的其他方案，因此他们就被成为多目标规划问题的非劣解或有效解，其余的方案都称为劣解。</p><p>当目标函数处于冲突状态的时候，就不会存在使得所有目标函数同时达到最大或最小值的最优解，于是我们只能寻求非劣解（又称非支配解或帕累托解）</p><h2 id="多目标规划求解技术"><a href="#多目标规划求解技术" class="headerlink" title="多目标规划求解技术"></a>多目标规划求解技术</h2><p>为了求得非劣解，我们常常需要将多目标规划问题转化为单目标规划问题去解决，实现这种转化有如下的建模方法</p><ul><li>效用最优化模型</li><li>罚款模型</li><li>约束模型</li><li>目标达到法</li><li>目标规划模型</li></ul><h3 id="效用最优化模型（线性加权法）"><a href="#效用最优化模型（线性加权法）" class="headerlink" title="效用最优化模型（线性加权法）"></a>效用最优化模型（线性加权法）</h3><p>规划问题的目标函数可以通过<strong>一定的方式</strong>进行求和运算，这种方法将一系列的<strong>目标函数</strong>与<strong>效用函数</strong>建立相关关系，各目标之间通过效用函数协调，使多目标规划问题转化为传统的单目标规划问题。<br>$$\max Z=\Psi(X)$$<br>$$s.t.   \quad \Phi(X) \leq G$$<br>$\Psi$是与各目标函数相关的效应函数的和函数</p><p>在<strong>用效用函数作为规划目标</strong>的时候，需要<strong>确定一组权值</strong>$\lambda_i$来反映原问题中各目标函数在总体目标中的权重。</p><h3 id="罚款模型（理想点法）"><a href="#罚款模型（理想点法）" class="headerlink" title="罚款模型（理想点法）"></a>罚款模型（理想点法）</h3><p>规划决策者对每一个目标函数都能提出所<strong>期望的值</strong>（或称<strong>满意值</strong>）</p><p>通过比较实际值$f_i$与期望值$f_i^{*}$之间的偏差来选择问题的解，数学表达式如下: </p><p>$$\min Z = \Sigma_{i=1}^k \lambda_i (f_i-f_i^{*})^2 $$<br>$$\Phi_i(x_1,x_2,…,x_n) \leq g_i(i=1,2,…,m)$$</p><h3 id="约束模型（极大极小法）"><a href="#约束模型（极大极小法）" class="headerlink" title="约束模型（极大极小法）"></a>约束模型（极大极小法）</h3><p>若规划问题的<strong>某一目标</strong>可以给出一个可供选择的范围，则该目标就可以<strong>作为约束条件</strong>而被排除出目标组，进入约束条件组中。</p><p>例如，除了第一个目标外，其余目标都可以提出一个可供选择的范围，那么这个多目标规划问题就可以转化为单目标规划问题：<br>$$\max(\min)Z=f_1(x_1,x_2,…,x_n)$$<br>$$\varphi_i(x_1,x_2,…,x_n) \leq g_i(x_1,x_2,..,x_n) $$<br>$$f_j^{\min} \leq f_j \leq f_j^{\max}$$</p><h3 id="目标到达法"><a href="#目标到达法" class="headerlink" title="目标到达法"></a>目标到达法</h3><p>在求解之前先设计与目标函数相应的一组目标值理想化的期望目标$f_i^{*}(i=1,2,…,k)$ </p><p>每一个目标对应的权重系数为$\omega^{*}_i(i=1,2,…,k)$ </p><p>松弛因子为$\gamma$</p><p>那么，多目标规划问题就转化为：<br>$$\min \limits_{X,\gamma} \gamma $$<br>$$\varphi_i(X) \leq 0(i=1,2,…,k)$$<br>$$f_i(X)-\omega_i\gamma \leq f_i^*(i=1,2,…,k)$$</p><h3 id="目标规划模型（目标规划法）"><a href="#目标规划模型（目标规划法）" class="headerlink" title="目标规划模型（目标规划法）"></a>目标规划模型（目标规划法）</h3><p>首先需要预先确定各个目标的期望值$f_i^{*}$<br>同时给每一个目标赋予一个<strong>优先因子</strong>和<strong>权系数</strong>，假定有$K$个目标，$L$个优先级($L \leq K$)，目标规划模型的数学形式为：<br>$$\min Z = \sum \limits_{l=1}^{L}p_l \sum \limits_{k=1}^{K}(\omega_{lk}^-d_k^-+\omega_{lk}^+d_k^+)$$<br>$$\varphi_i(x_1,x_2,…,x_n) \leq g_i(i=1,2,…,m)$$ </p><p>$$f_i+d_i^{-}-d_i^{+} = f_i^{*}(i=1,2,…,K)$$<br>其中，</p><ul><li>$d_i^+$和$d_i^-$ 分别表示与$f_i$相应的、与$f_i^*$相比的目标超过值和不足值，即正、负偏差变量</li><li>$p_l$表示第$l$个优先级</li><li>$\omega_{lk}^-$、$\omega_{lk}^+$表示在同一优先级$p_l$中，不同目标的正、负偏差变量的权系数</li></ul>]]></content>
+      
       <categories>
-        <category>数学</category>
-        <category>优化</category>
+          
+          <category> 数学 </category>
+          
+          <category> 优化 </category>
+          
       </categories>
-      <tags>
-        <tag>规划</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Markdown指南]]></title>
-    <url>%2F2018%2F04%2F06%2Fmarkdown%2F</url>
-    <content type="text"><![CDATA[Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。目前 github、Stackoverflow 等网站均支持这种格式。 写在最前之前看到一篇用Markdown写学术论文的教程，才知晓Markdown也是博大精深，今天就先铺垫一下，日后准备学会用Markdown写学术论文的操作。 在下面的内容中，在编辑器中键入的内容都将采用键入代码的格式，而实际会在Markdown中看到的效果，会用引用的方式给出，就比如下面的： 实际效果 宗旨 Markdown 的目标是实现「易读易写」。 可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 Setext、atx、Textile、reStructuredText、Grutatext 和 EtText，而最大灵感来源其实是纯文本电子邮件的格式。 基本语法标题在Markdown中设置标题有两种方法，分别是#和===，个人更加习惯使用第一种，因为可以支持从一级到六级的标题，后面那种只能支持两种（===是一级标题，---是二级标题，任何数量的=和-都没区别） #一级标题 ######六级标题 列表列表是在Makdown中使用频率仅次于标题的部分了，就比如在上面的标题部分，对于一级标题和六级标题的示例，就采用了无序列表。 在Markdown中无序列表的使用有很多种-，*，+ ，都可以实现无序列表 - List1 List1 + list2 List2 * List3 List3 有序列表则使用1. 这样的形式进行输入（点号后有空格）。但是事实上有序列表前面的数字并不是取决于输入的数字，这就是说，你完全可以随意输入数字： 1. List1 List1 3. List1 List1 虽然有这样的特性，但是还是建议正常顺序输入。 任务列表任务列表和列表的使用比较相似，需要在列表的- 后加入[]或者[x]，表示任务是否完成 - [] 选项一 选项一 - [x] 选项二 选项二 引用在之前的部分已经出现了相当多的引用的部分了，在Markdown的使用中，引用也是会经常用到的，引用的使用方式是输入&gt; &gt;这里是引用 这里是引用 引用中还可以继续引用，只需要键入&gt;&gt; &gt;这是引用 &gt;&gt;这是引用里面的引用 这是引用 这是引用里面的引用 加粗，斜体与删除 加粗：**加粗** 加粗 斜体：*斜体* 斜体 删除：~~删除~~ 删除 链接[RoseLand](https://rosecabbage.cc) RoseLand 方括号中表示要在链接上显示的文字，圆括号中就是链接的地址 图片图片的插入和链接比较相似 ![Mou icon](http://mouapp.com/Mou_128.png) 本地的图片是一样的原理，但是不能改变图片的路径，否则md文件就找不到图片了 代码块在上面的部分也使用了多次代码块了，键入两个反引号，就可以在他们之间插入代码了 import numpy as np 或者直接使用Tab即可 分割线要在Markdown中使用分割线，方法很多： --- *** * * * 目录要插入目录，只需要键入[TOC] 进阶操作表格和$\LaTeX$非常相似的是，Markdown在表格上的表现也比较让人头疼，插入表格几乎变成了一件让人崩溃的事情，首先来看基本操作： 第一行是标题 :--- 左对齐 :--: 居中 ---: 右对齐 下面是示例 1234| Title 1 | Title 2 | Title 3 ||:--------|:-------:|--------:|| Item 1 | Item 2 | Item 3 || Item 4 | Item 5 | Item 6 | Title 1 Title 2 Title 3 Item 1 Item 2 Item 3 Item 4 Item 5 Item 6 但是，Markdown似乎对合并单元格这样其实比较常用的操作无能为力 这里推荐一个网站，可以在线生成HTML代码，方便插入——Tables Generator 内嵌CSS样式&lt;p style=&quot;color: #AD5D0F;font-size: 30px; font-family: &#39;宋体&#39;;&quot;&gt;内嵌样式&lt;/p&gt; 内嵌样式 脚注可以实现参考文献的效果，使用的方法是加入[1]，在文章最后显示脚注 12Markdown 的目标是实现「易读易写」。[^1][^1]:[markdown.cn](http://markdown.cn/) 自动邮箱链接&lt;1525568340@qq.com&gt; &#x31;&#53;&#x32;&#53;&#x35;&#x36;&#56;&#51;&#52;&#x30;&#x40;&#113;&#x71;&#46;&#99;&#111;&#109; 免费编辑器 Windows 平台 MarkdownPad typora 关于这个软件的介绍可以看这篇，个人使用中 Linux 平台 ReText Mac平台 Mou 其他编辑器 Sublime Text 3]]></content>
+      
+      
+        <tags>
+            
+            <tag> 规划 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Markdown指南</title>
+      <link href="/2018/04/06/markdown/"/>
+      <url>/2018/04/06/markdown/</url>
+      <content type="html"><![CDATA[<p><img src="/2018/04/06/markdown/i-love-markdown.png" alt="i-love-markdown"></p><blockquote><p>Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。目前 github、Stackoverflow 等网站均支持这种格式。</p></blockquote><a id="more"></a><h1 id="写在最前"><a href="#写在最前" class="headerlink" title="写在最前"></a>写在最前</h1><p>之前看到一篇用Markdown写学术论文的教程，才知晓Markdown也是博大精深，今天就先铺垫一下，日后准备学会用Markdown写学术论文的操作。</p><p>在下面的内容中，在编辑器中键入的内容都将采用<code>键入代码</code>的格式，而实际会在Markdown中看到的效果，会用引用的方式给出，就比如下面的：</p><blockquote><p>实际效果</p></blockquote><h1 id="宗旨"><a href="#宗旨" class="headerlink" title="宗旨"></a>宗旨</h1><blockquote><p>Markdown 的目标是实现「易读易写」。</p><p>可读性，无论如何，都是最重要的。一份使用 Markdown 格式撰写的文件应该可以直接以纯文本发布，并且看起来不会像是由许多标签或是格式指令所构成。Markdown 语法受到一些既有 text-to-HTML 格式的影响，包括 <a href="http://docutils.sourceforge.net/mirror/setext.html">Setext</a>、<a href="http://www.aaronsw.com/2002/atx/">atx</a>、<a href="http://textism.com/tools/textile/">Textile</a>、<a href="http://docutils.sourceforge.net/rst.html">reStructuredText</a>、<a href="http://www.triptico.com/software/grutatxt.html">Grutatext</a> 和 <a href="http://ettext.taint.org/doc/">EtText</a>，而最大灵感来源其实是纯文本电子邮件的格式。</p></blockquote><h1 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h1><h2 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h2><p>在Markdown中设置标题有两种方法，分别是<code>#</code>和<code>===</code>，个人更加习惯使用第一种，因为可以支持从一级到六级的标题，后面那种只能支持两种（<code>===</code>是一级标题，<code>---</code>是二级标题，任何数量的<code>=</code>和<code>-</code>都没区别）</p><ul><li><code>#一级标题</code></li></ul><ul><li><code>######六级标题</code></li></ul><h2 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h2><p>列表是在Makdown中使用频率仅次于标题的部分了，就比如在上面的标题部分，对于一级标题和六级标题的示例，就采用了无序列表。</p><p>在Markdown中无序列表的使用有很多种<code>-</code>，<code>*</code>，<code>+</code> ，都可以实现无序列表</p><p><code>- List1</code></p><blockquote><ul><li>List1</li></ul></blockquote><p><code>+ list2</code></p><blockquote><ul><li>List2</li></ul></blockquote><p><code>* List3</code></p><blockquote><ul><li>List3</li></ul></blockquote><p>有序列表则使用<code>1.  </code> 这样的形式进行输入（<strong>点号后有空格</strong>）。但是事实上有序列表前面的数字并不是取决于输入的数字，这就是说，你完全可以随意输入数字：</p><p><code>1. List1</code></p><blockquote><ol><li>List1</li></ol></blockquote><p><code>3. List1</code></p><blockquote><ol><li>List1</li></ol></blockquote><p>虽然有这样的特性，但是还是建议正常顺序输入。</p><h2 id="任务列表"><a href="#任务列表" class="headerlink" title="任务列表"></a>任务列表</h2><p>任务列表和列表的使用比较相似，需要在列表的<code>-</code> 后加入<code>[]</code>或者<code>[x]</code>，表示任务是否完成</p><p><code>- [] 选项一</code></p><blockquote><ul><li><input disabled type="checkbox"> 选项一</li></ul></blockquote><p><code>- [x] 选项二</code></p><blockquote><ul><li><input checked disabled type="checkbox"> 选项二</li></ul></blockquote><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>在之前的部分已经出现了相当多的引用的部分了，在Markdown的使用中，引用也是会经常用到的，引用的使用方式是输入<code>&gt;</code> </p><p><code>&gt;这里是引用</code></p><blockquote><p>这里是引用</p></blockquote><p>引用中还可以继续引用，只需要键入<code>&gt;&gt;</code></p><p><code>&gt;这是引用</code></p><p><code>&gt;&gt;这是引用里面的引用</code> </p><blockquote><p>这是引用</p><blockquote><p>这是引用里面的引用</p></blockquote></blockquote><h2 id="加粗，斜体与删除"><a href="#加粗，斜体与删除" class="headerlink" title="加粗，斜体与删除"></a>加粗，斜体与删除</h2><ul><li><p>加粗：<code>**加粗**</code></p><blockquote><p><strong>加粗</strong></p></blockquote></li><li><p>斜体：<code>*斜体*</code></p><blockquote><p><em>斜体</em></p></blockquote></li><li><p>删除：<code>~~删除~~</code></p><blockquote><p><del>删除</del></p></blockquote></li></ul><h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p><code>[RoseLand](https://rosecabbage.cc)</code></p><blockquote><p><a href="https://rosecabbage.cc/">RoseLand</a></p></blockquote><p>方括号中表示要在链接上显示的文字，圆括号中就是链接的地址</p><h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>图片的插入和链接比较相似</p><p><code>![Mou icon](http://mouapp.com/Mou_128.png)</code></p><blockquote><p><img src="http://mouapp.com/Mou_128.png" alt="Mou icon"></p></blockquote><p>本地的图片是一样的原理，但是<strong>不能改变</strong>图片的路径，否则md文件就找不到图片了</p><h2 id="代码块"><a href="#代码块" class="headerlink" title="代码块"></a>代码块</h2><p>在上面的部分也使用了多次代码块了，键入两个反引号，就可以在他们之间插入代码了</p><blockquote><p><code>import numpy as np</code></p></blockquote><p>或者直接使用<code>Tab</code>即可</p><h2 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h2><p>要在Markdown中使用分割线，方法很多：</p><p><code>---</code></p><p><code>***</code></p><p><code>* * *</code></p><blockquote><hr><hr><hr></blockquote><h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><p>要插入目录，只需要键入<code>[TOC]</code></p><h1 id="进阶操作"><a href="#进阶操作" class="headerlink" title="进阶操作"></a>进阶操作</h1><h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><p>和$\LaTeX$非常相似的是，Markdown在表格上的表现也比较让人头疼，插入表格几乎变成了一件让人崩溃的事情，首先来看基本操作：</p><ul><li>第一行是标题<ul><li><code>:---</code> 左对齐</li><li><code>:--:</code>  居中</li><li><code>---:</code> 右对齐</li></ul></li></ul><p>下面是示例</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| Title 1 | Title 2 | Title 3 |</span><br><span class="line">|:--------|:-------:|--------:|</span><br><span class="line">| Item 1  | Item 2  | Item 3  |</span><br><span class="line">| Item 4  | Item 5  | Item 6  |</span><br></pre></td></tr></table></figure><blockquote><table><thead><tr><th align="left">Title 1</th><th align="center">Title 2</th><th align="right">Title 3</th></tr></thead><tbody><tr><td align="left">Item 1</td><td align="center">Item 2</td><td align="right">Item 3</td></tr><tr><td align="left">Item 4</td><td align="center">Item 5</td><td align="right">Item 6</td></tr></tbody></table></blockquote><p><strong>但是，Markdown似乎对合并单元格这样其实比较常用的操作无能为力</strong></p><p>这里推荐一个网站，可以在线生成HTML代码，方便插入——<a href="http://www.tablesgenerator.com/">Tables Generator</a> </p><h2 id="内嵌CSS样式"><a href="#内嵌CSS样式" class="headerlink" title="内嵌CSS样式"></a>内嵌CSS样式</h2><p><code>&lt;p style=&quot;color: #AD5D0F;font-size: 30px; font-family: &#39;宋体&#39;;&quot;&gt;内嵌样式&lt;/p&gt;</code></p><blockquote><p style="color: #AD5D0F;font-size: 30px; font-family: '宋体';">内嵌样式</p> </blockquote><h2 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h2><p>可以实现参考文献的效果，使用的方法是加入<code>[1]</code>，在文章最后显示脚注</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Markdown 的目标是实现「易读易写」。[^1]</span><br><span class="line">[<span class="string">^1</span>]:[<span class="string">markdown.cn</span>](<span class="link">http://markdown.cn/</span>)</span><br></pre></td></tr></table></figure><h2 id="自动邮箱链接"><a href="#自动邮箱链接" class="headerlink" title="自动邮箱链接"></a>自动邮箱链接</h2><p><code>&lt;1525568340@qq.com&gt;</code></p><blockquote><p><a href="mailto:&#x31;&#53;&#50;&#x35;&#x35;&#x36;&#56;&#x33;&#x34;&#48;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#109;">&#x31;&#53;&#50;&#x35;&#x35;&#x36;&#56;&#x33;&#x34;&#48;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#109;</a></p></blockquote><h1 id="免费编辑器"><a href="#免费编辑器" class="headerlink" title="免费编辑器"></a>免费编辑器</h1><ul><li>Windows 平台<ul><li><a href="http://markdownpad.com/">MarkdownPad</a></li><li><a href="typora.io">typora</a> 关于这个软件的介绍可以看<a href="https://rosecabbage.cc/2018/04/03/typora-into/">这篇</a>，个人使用中</li></ul></li><li>Linux 平台<ul><li><a href="https://pkgs.org/download/retext">ReText</a></li></ul></li><li>Mac平台<ul><li><a href="http://25.io/mou/">Mou</a></li></ul></li><li>其他编辑器<ul><li><a href="http://www.sublimetext.com/3">Sublime Text 3</a></li></ul></li></ul>]]></content>
+      
       <categories>
-        <category>计算机</category>
+          
+          <category> 计算机 </category>
+          
       </categories>
-      <tags>
-        <tag>Markdown</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[正则表达式（入门）]]></title>
-    <url>%2F2018%2F04%2F05%2Fregular-expression-basic%2F</url>
-    <content type="text"><![CDATA[虽然早先就知道了正则表达式，但是一直没有详细的了解过（感觉是很高端的操作），但是又觉得会很有用（前提是掌握的很溜，否则可能错误不断），就去学习了一下，写此笔记。 正则表达式简介什么是正则表达式 正则表达式，又称正规表示法、常规表示法(Regular Expression，简写为regex, regrep, RE)，是计算机科学的一个概念 正则表达式使用单个字符串来描述、匹配一系列符合某个句法规则的字符串 在很多文本编辑器里，正则表达式通常被用来检索、替换那些符合某个模式的字符串 字符串搜索和匹配的工具，通过正则表达式可以完成复杂的字符串操作 什么时候会用到正则表达式 数据验证 字符串查找 字符串替换 正则表达式基本语法元字符 . 匹配除换行符以外的任意字符 \w 匹配字母或数字或下划线或汉字 \s 匹配任意的空白符 \d 匹配数字 \b 匹配单词的开始或结束 ^ 匹配字符串的开始 $ 匹配字符串的结束 元字符^和$都匹配一个位置，这和\b有点类似。^匹配你要用来查找的字符串的开头，$匹配结尾。这两个代码在验证输入的内容时非常有用，比如一个网站如果要求你填写的QQ号必须为5位到12位数字时，可以使用：^\d{5,12}$。 字符转义如果想查找元字符本身的话，不能直接指定他们，需要使用\ 来取消他们的特殊含义，比如\. 和\* 。 类似的，如果要查找\ ，也需要用\\ 。 重复 * 重复零次或更多 + 重复一次或更多 ? 重复零次或一次 {n} 重复n次 {n,} 重复n次或更多 {n,m} 重复n次到m次 例子： Windows\d+ 表示Windows后面跟着一个或更多的数字 ^\w+ 匹配一行的第一个单词 字符类要想查找数字、字母和数字或者空白是很简单的（只要元字符就可以实现了），但是要匹配没有预定义元字符的字符集合（比如元音字母）光靠前面的元字符就不够了。 [aeiou] 可以匹配任何一个英文元音字母 [.?!] 匹配标点符号 [0-9] 的含义和 \d 完全一致，类似的，[a-z0-9A-Z_] 等同于\w （如果只考虑英文） \(?0\d{2}[) -]?\d{8} 可以匹配几种格式的电话号码： (010)88886666 022-22334455 02912345678 首先是左括号出现零次或一次，然后是0，后面跟着两位数字，然后是右括号、空格、或者-中的一个或不出现，这之后是8个数字 分枝条件\(?0\d{2}[) -]?\d{8} 也能匹配不正确的格式（比如010)12345678 ） 正则表达式里的分枝条件指的是有几种规则，满足任一种规则都当成匹配，具体方法是用 | 把不同的规则分隔开 例子： 0\d{2}-\d{8}|0\d{3}-\d{7} 匹配两种格式，一种是3位区号8位本地号（010-88888888），一种是4位区号7位本地号（0571-7777777） \(0\d{2}\)[- ]?\d{8}|0\d{2}[- ]?\d{8} 匹配3位区号的电话号码，其中分枝条件表示三位区号可以用括号括起来，也可以不使用括号，但是括号必须成对出现 \d{5}-\d{4}|\d{5} 匹配美国的邮政编码（5位数字或者-间隔的9位数字） 使用分枝条件一定要注意各个条件的顺序，如果调换上面第三个例子中的两个条件的顺序，那么只能匹配5位的邮编或者9位邮编的前5位，这样的原因是，匹配分枝条件的时候，从左到右测试每个条件，一旦匹配就不会管其他的条件 分组分组的一个最基本的应用就是重复多个字符，使用的方法是用小括号指定子表达式，或者也称为分组。 例子 (\d{1,3}\.){3}\d{1,3} 这是一个IP地址匹配的表达式，\d{1,3}\. 表示一位到三位数字后面跟着一个点号，用小括号括起来之后跟着{3} 表示这样的格式重复三次，最后再加上一位到三位的数字。 事实上这并不是一个正确的表达式，因为他也可以匹配到超过255的并不存在的IP地址，在这里举出这个例子只是说明分组的一种使用方法。 ((2[0-4]\d|25[0-5]|[01]?\d\d?)\.){3}(2[0-4]\d|25[0-5]|[01]?\d\d?) 才是正确的IP地址的匹配表达式 反义反义指的是不属于某个能简单定义的字符类的字符 \W 匹配任意不是字母或数字或下划线或汉字的字符 \S 匹配任意不是的空白符的字符 \D 匹配任意非数字字符 \B 匹配不是单词的开始或结束的位置 [^x] 匹配除了x以外的任意字符 [^aeiou] 匹配除了元音字母以外的字符 后向引用使用小括号指定一个子表达式后，匹配这个子表达式的文本可以在表达式或其它程序中作进一步的处理。默认情况下，每个分组会自动拥有一个组号，规则是：从左向右，以分组的左括号为标志，第一个出现的分组的组号为1，第二个为2，以此类推。 后向引用指的是搜索前面的某个分组的文本，其实也就是为了使得表达式更加简单，重复出现的不需要输入同样的表达式，而只需要用\1 这样的符号来简单的表示即可。 组号根据默认的条件会顺序用数字命名，但是我们也可以自定义：(?&lt;Name&gt;\w+)或者(?&#39;Name&#39;\w+) 上述的两种方法得到的结果是一样的，都命名为Name 要反向引用的时候需要输入\k&lt;Name&gt; 如果要不捕获匹配的文本，方法是(?:\w+) ，这样就不会有组号了 零宽断言零宽断言是用来查找在某些内容之前或者之后的内容 (?=exp) 匹配exp前面的位置 (?&lt;=exp) 匹配exp后面的位置 (?!exp) 匹配后面不是exp的位置 (?&lt;!exp) 匹配前面不是exp的位置 具体来说，(?=exp) 是零宽度正预测先行断言，断言自身出现的位置后面能匹配表达式exp，例如\b\w+(?=ing\b) 查找的是ing形式的动词 (?&lt;=exp)是零宽度正回顾后发断言 负向零宽断言零宽度负预测先行断言(?!exp) \d{3}(?!\d) 匹配三位数字，并且三位数字之后不能是数字 \b((?!abc)\w)+\b 匹配不包含连续字符串abc的单词 零宽度负回顾后发断言(?&lt;!exp) (?&lt;![a-z])\d{7} 匹配前面不是小写字母的数字7 注释(?#comment) 即可包含注释 贪婪与懒惰贪婪当正则表达式中包含能接受重复的限定符时，通常的行为是（在使整个表达式能得到匹配的前提下）匹配尽可能多的字符。这被称为贪婪匹配。 懒惰类似的，懒惰匹配指的是匹配尽可能少的字符。 前面提到的限定符都可以转化为懒惰匹配模式 使用方法是在他后面加上一个问号? .*? 表示的任意数量的重复，但是使用最少的重复 总结上面的这些只是正则表达式最基础的一些内容，非常感谢正则表达式30分钟入门教程花费我绝对不止三十分钟才对正则表达式有了很基础的了解。]]></content>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>正则表达式（入门）</title>
+      <link href="/2018/04/05/regular-expression-basic/"/>
+      <url>/2018/04/05/regular-expression-basic/</url>
+      <content type="html"><![CDATA[<p><img src="/2018/04/05/regular-expression-basic/regular_expression-1.png" alt="regular_expression-1"></p><blockquote><p>虽然早先就知道了正则表达式，但是一直没有详细的了解过（感觉是很高端的操作），但是又觉得会很有用（前提是掌握的很溜，否则可能错误不断），就去学习了一下，写此笔记。</p></blockquote><a id="more"></a> <h2 id="正则表达式简介"><a href="#正则表达式简介" class="headerlink" title="正则表达式简介"></a>正则表达式简介</h2><h3 id="什么是正则表达式"><a href="#什么是正则表达式" class="headerlink" title="什么是正则表达式"></a>什么是正则表达式</h3><ul><li>正则表达式，又称正规表示法、常规表示法(Regular Expression，简写为regex, regrep, RE)，是计算机科学的一个概念</li><li>正则表达式使用单个字符串来描述、匹配一系列符合某个句法规则的字符串</li><li>在很多文本编辑器里，正则表达式通常被用来检索、替换那些符合某个模式的字符串</li><li>字符串搜索和匹配的工具，通过正则表达式可以完成复杂的字符串操作</li></ul><h3 id="什么时候会用到正则表达式"><a href="#什么时候会用到正则表达式" class="headerlink" title="什么时候会用到正则表达式"></a>什么时候会用到正则表达式</h3><ul><li>数据验证</li><li>字符串查找</li><li>字符串替换</li></ul><h2 id="正则表达式基本语法"><a href="#正则表达式基本语法" class="headerlink" title="正则表达式基本语法"></a>正则表达式基本语法</h2><h3 id="元字符"><a href="#元字符" class="headerlink" title="元字符"></a>元字符</h3><ul><li><code>.</code>    匹配除换行符以外的任意字符</li><li><code>\w</code>  匹配字母或数字或下划线或汉字</li><li><code>\s</code>  匹配任意的空白符</li><li><code>\d</code>  匹配数字</li><li><code>\b</code>  匹配单词的开始或结束</li><li><code>^</code>    匹配字符串的开始</li><li><code>$</code>    匹配字符串的结束</li></ul><p>元字符<code>^</code>和<code>$</code>都匹配一个位置，这和<code>\b</code>有点类似。<code>^</code>匹配你要用来查找的字符串的开头，<code>$</code>匹配结尾。这两个代码在验证输入的内容时非常有用，比如一个网站如果要求你填写的QQ号必须为5位到12位数字时，可以使用：<code>^\d&#123;5,12&#125;$</code>。</p><h3 id="字符转义"><a href="#字符转义" class="headerlink" title="字符转义"></a>字符转义</h3><p>如果想查找元字符本身的话，不能直接指定他们，需要使用<code>\</code> 来取消他们的特殊含义，比如<code>\.</code> 和<code>\*</code> 。</p><p>类似的，如果要查找<code>\</code> ，也需要用<code>\\</code> 。</p><h3 id="重复"><a href="#重复" class="headerlink" title="重复"></a>重复</h3><ul><li><code>* </code>          重复零次或更多</li><li><code>+</code>          重复一次或更多</li><li><code>?</code>          重复零次或一次</li><li><code>&#123;n&#125;</code>      重复n次</li><li><code>&#123;n,&#125;</code>    重复n次或更多</li><li><code>&#123;n,m&#125;</code>  重复n次到m次</li></ul><p>例子：</p><ul><li><code>Windows\d+</code> 表示Windows后面跟着一个或更多的数字</li><li><code>^\w+</code> 匹配一行的第一个单词 </li></ul><h3 id="字符类"><a href="#字符类" class="headerlink" title="字符类"></a>字符类</h3><p>要想查找数字、字母和数字或者空白是很简单的（只要元字符就可以实现了），但是要匹配没有预定义元字符的字符集合（比如元音字母）光靠前面的元字符就不够了。</p><p><code>[aeiou]</code> 可以匹配任何一个英文元音字母</p><p><code>[.?!]</code> 匹配标点符号</p><p><code>[0-9]</code> 的含义和 <code>\d</code> 完全一致，类似的，<code>[a-z0-9A-Z_] </code> 等同于<code>\w</code> （如果只考虑英文）</p><p><code>\(?0\d&#123;2&#125;[) -]?\d&#123;8&#125;</code> 可以匹配几种格式的电话号码：</p><ul><li>(010)88886666</li><li>022-22334455</li><li>02912345678</li></ul><p><em>首先是左括号出现零次或一次，然后是0，后面跟着两位数字，然后是右括号、空格、或者-中的一个或不出现，这之后是8个数字</em></p><h3 id="分枝条件"><a href="#分枝条件" class="headerlink" title="分枝条件"></a>分枝条件</h3><p><code>\(?0\d&#123;2&#125;[) -]?\d&#123;8&#125;</code> 也能匹配不正确的格式（比如<em>010)12345678</em> ）</p><p>正则表达式里的分枝条件指的是<strong>有几种规则，满足任一种规则都当成匹配</strong>，具体方法是<strong>用 | 把不同的规则分隔开</strong></p><p>例子：</p><ul><li><code>0\d&#123;2&#125;-\d&#123;8&#125;|0\d&#123;3&#125;-\d&#123;7&#125;</code> 匹配两种格式，一种是3位区号8位本地号（010-88888888），一种是4位区号7位本地号（0571-7777777）</li><li><code>\(0\d&#123;2&#125;\)[- ]?\d&#123;8&#125;|0\d&#123;2&#125;[- ]?\d&#123;8&#125;</code> 匹配3位区号的电话号码，其中分枝条件表示三位区号可以用括号括起来，也可以不使用括号，但是括号必须成对出现</li><li><code>\d&#123;5&#125;-\d&#123;4&#125;|\d&#123;5&#125;</code> 匹配美国的邮政编码（5位数字或者-间隔的9位数字）</li></ul><blockquote><p>使用分枝条件一定要注意各个条件的顺序，如果调换上面第三个例子中的两个条件的顺序，那么只能匹配5位的邮编或者9位邮编的前5位，这样的原因是，<strong>匹配分枝条件的时候，从左到右测试每个条件，一旦匹配就不会管其他的条件</strong></p></blockquote><h3 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h3><p>分组的一个最基本的应用就是重复多个字符，使用的方法是用小括号指定<strong>子表达式</strong>，或者也称为<strong>分组</strong>。</p><p>例子</p><ul><li><code>(\d&#123;1,3&#125;\.)&#123;3&#125;\d&#123;1,3&#125;</code> 这是一个IP地址匹配的表达式，<code>\d&#123;1,3&#125;\.</code> 表示一位到三位数字后面跟着一个点号，用小括号括起来之后跟着<code>&#123;3&#125;</code> 表示这样的格式重复三次，最后再加上一位到三位的数字。</li><li>事实上这并不是一个正确的表达式，因为他也可以匹配到超过255的并不存在的IP地址，在这里举出这个例子只是说明分组的一种使用方法。</li><li><code>((2[0-4]\d|25[0-5]|[01]?\d\d?)\.)&#123;3&#125;(2[0-4]\d|25[0-5]|[01]?\d\d?)</code> 才是正确的IP地址的匹配表达式</li></ul><h3 id="反义"><a href="#反义" class="headerlink" title="反义"></a>反义</h3><p>反义指的是<strong>不属于某个能简单定义的字符类的字符</strong></p><ul><li><code>\W</code>  匹配任意不是字母或数字或下划线或汉字的字符</li><li><code>\S</code>  匹配任意不是的空白符的字符</li><li><code>\D</code>  匹配任意非数字字符</li><li><code>\B</code>  匹配不是单词的开始或结束的位置</li><li><code>[^x]</code>    匹配除了x以外的任意字符</li><li><code>[^aeiou]</code>  匹配除了元音字母以外的字符</li></ul><h3 id="后向引用"><a href="#后向引用" class="headerlink" title="后向引用"></a>后向引用</h3><p>使用小括号指定一个子表达式后，<strong>匹配这个子表达式的文本</strong>可以在表达式或其它程序中作进一步的处理。默认情况下，每个分组会自动拥有一个组号，规则是：从左向右，以分组的左括号为标志，第一个出现的分组的组号为1，第二个为2，以此类推。</p><p>后向引用指的是搜索前面的某个分组的文本，其实也就是为了使得表达式更加简单，重复出现的不需要输入同样的表达式，而只需要用<code>\1</code> 这样的符号来简单的表示即可。</p><p>组号根据默认的条件会顺序用数字命名，但是我们也可以自定义：<code>(?&lt;Name&gt;\w+)</code>或者<code>(?&#39;Name&#39;\w+)</code> </p><ul><li>上述的两种方法得到的结果是一样的，都命名为Name</li><li>要反向引用的时候需要输入<code>\k&lt;Name&gt;</code></li><li>如果要不捕获匹配的文本，方法是<code>(?:\w+)</code> ，这样就不会有组号了 </li></ul><h3 id="零宽断言"><a href="#零宽断言" class="headerlink" title="零宽断言"></a>零宽断言</h3><p>零宽断言是用来查找在某些内容之前或者之后的内容</p><ul><li><code>(?=exp)</code>     匹配exp前面的位置</li><li><code>(?&lt;=exp)</code>   匹配exp后面的位置</li><li><code>(?!exp)</code>     匹配后面不是exp的位置</li><li><code>(?&lt;!exp)</code>   匹配前面不是exp的位置</li></ul><p>具体来说，<code>(?=exp)</code> 是零宽度正预测先行断言，断言自身出现的位置后面能匹配表达式exp，例如<code>\b\w+(?=ing\b)</code> 查找的是ing形式的动词</p><p><code>(?&lt;=exp)</code>是零宽度正回顾后发断言</p><h3 id="负向零宽断言"><a href="#负向零宽断言" class="headerlink" title="负向零宽断言"></a>负向零宽断言</h3><p>零宽度负预测先行断言<code>(?!exp)</code> </p><ul><li><code>\d&#123;3&#125;(?!\d)</code> 匹配三位数字，并且三位数字之后不能是数字</li><li><code>\b((?!abc)\w)+\b</code> 匹配不包含连续字符串abc的单词</li></ul><p>零宽度负回顾后发断言<code>(?&lt;!exp)</code></p><ul><li><code>(?&lt;![a-z])\d&#123;7&#125;</code> 匹配前面不是小写字母的数字7</li></ul><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p><code>(?#comment)</code> 即可包含注释</p><h3 id="贪婪与懒惰"><a href="#贪婪与懒惰" class="headerlink" title="贪婪与懒惰"></a>贪婪与懒惰</h3><h4 id="贪婪"><a href="#贪婪" class="headerlink" title="贪婪"></a>贪婪</h4><p>当正则表达式中包含能接受重复的限定符时，通常的行为是（在使整个表达式能得到匹配的前提下）匹配<strong>尽可能多</strong>的字符。这被称为贪婪匹配。</p><h4 id="懒惰"><a href="#懒惰" class="headerlink" title="懒惰"></a>懒惰</h4><p>类似的，懒惰匹配指的是匹配尽可能少的字符。</p><p>前面提到的限定符都可以转化为懒惰匹配模式</p><p>使用方法是在他后面加上一个问号**?**</p><p><code>.*?</code> 表示的任意数量的重复，但是使用最少的重复   </p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>上面的这些只是正则表达式最基础的一些内容，非常感谢<a href="http://deerchao.net/tutorials/regex/regex.htm">正则表达式30分钟入门教程</a>花费我绝对不止三十分钟才对正则表达式有了很基础的了解。 </p>]]></content>
+      
       <categories>
-        <category>计算机</category>
+          
+          <category> 计算机 </category>
+          
       </categories>
-      <tags>
-        <tag>正则表达式</tag>
-        <tag>计算机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[typora - 这大概是我用过的最好的Markdown编辑器]]></title>
-    <url>%2F2018%2F04%2F03%2Ftypora-into%2F</url>
-    <content type="text"><![CDATA[如果你喜欢「所见即所得」的视觉效果，如果你喜欢简洁的操作体验（比如拖拽添加图片），typora大概就是你想要的Markdown编辑器 凡是用过Markdown的都会体会到Markdown的优势，为了排版你几乎不需要花费额外的时间，就可以得到还看得过去的排版结果（当然Markdown也有很多高端的玩法，之前就看到过用Markdown来排版论文的），并且相比于$\LaTeX$ 他的学习成本要低很多，因此对于大多数人来说，Markdown都是一个很好的选择。 不像Word只有Kingsoft和Microsoft两家可以选择，Markdown编辑器的选择就要多得多，并且各个编辑器的特性都略有不同，这里要推荐的就是从刚推出Beta版本就使用至今的 typora 。typora目前还在Beta阶段，并且是免费的，自Beta版本发布就有人说正式版发布将会变成收费软件，但是Beta版本发布至今也超过一年了，尚不知道什么时候会推出正式版本。 特性介绍所见即所得这是typora最大的特性，在双栏的设计铺天盖地的Markdown编辑器中，要找到一款所见即所得的实属不易，最初吸引我的就是这一个特性。之前也使用过很多Markdown的编辑器，包括MarkdownPad这样专门用于Markdown文件的编辑器和Atom, Sublime这类通过插件支持Markdown的编辑器，他们实现预览都是通过双栏实时预览，但是或多或少都存在着渲染比较卡顿的情况，一旦书写的文字较多，你都可以在预览的窗口看到明显的延迟。typora虽然在推出之初也存在着这样的问题，但是更新到现在的版本已经是相当流畅了。相比于其他的软件，typora给你的视觉体验更好，你在编辑器中几乎找不到Markdown的语法代码，一旦输入，typora就会进行实时渲染。 一旦输入完成，敲击回车或者方向下键，typora就会马上给你呈现最终的效果 图片插入刚开始使用Markdown的用户最介意的可能就是Markdown在插入图片上的不方便，在Word上只需要通过简单的拖拽实现的插入过程，在Markdown中你甚至还需要输入图片的路径，给高效的输入带来了一定的阻碍。在typora中你需要做的，只是把图片拖到编辑框中。 将图片拖到编辑器中可以直接看到最终效果。 $\LaTeX$的良好支持作为一个$\LaTeX$的使用者，Markdown是要比$\LaTeX$更加简单快捷的，但是$\LaTeX$一个很大的优势就是数学公式的使用，在typora中你无需担心这一点，typora中的$\LaTeX$使用和在$\LaTeX$的编辑环境中完全相同，即使是在学术上的使用也完全不虚。 数学公式输入效果 文件导出 很多软件都将导出pdf文件作为软件的高级功能，只有收费才能实现，但是typora现阶段是完全免费的，并且也支持pdf的导出效果，第一次使用的时候会需要安装Pandoc，之后重启编辑器即可 快捷键在typora中，你可以通过Ctrl+1来表示一级标题，同理Ctrl+2来表示二级标题，并且typora的高级设置中支持快捷键的自定义，对于习惯于使用快捷键的用户来说也是相当方便的。 总结相比于其他的编辑器，typora的最大优势在于所见即所得，免费，对$\LaTeX$的良好支持，在操作和视觉显示上他接近于Word，但是排版的美观程度又更贴近于$\LaTeX$的效果， 非常适合日常使用。]]></content>
+      
+      
+        <tags>
+            
+            <tag> 正则表达式 </tag>
+            
+            <tag> 计算机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>typora - 这大概是我用过的最好的Markdown编辑器</title>
+      <link href="/2018/04/03/typora-into/"/>
+      <url>/2018/04/03/typora-into/</url>
+      <content type="html"><![CDATA[<p><img src="/2018/04/03/typora-into/typora.jpg" alt="typora"></p><blockquote><p>如果你喜欢「所见即所得」的视觉效果，如果你喜欢简洁的操作体验（比如拖拽添加图片），typora大概就是你想要的Markdown编辑器</p></blockquote><a id="more"></a><p>凡是用过Markdown的都会体会到Markdown的优势，为了排版你几乎不需要花费额外的时间，就可以得到还看得过去的排版结果（当然Markdown也有很多高端的玩法，之前就看到过用Markdown来排版论文的），并且相比于$\LaTeX$ 他的学习成本要低很多，因此对于大多数人来说，Markdown都是一个很好的选择。</p><p>不像Word只有Kingsoft和Microsoft两家可以选择，Markdown编辑器的选择就要多得多，并且各个编辑器的特性都略有不同，这里要推荐的就是从刚推出Beta版本就使用至今的 <a href="https://www.typora.io/">typora</a> 。typora目前还在Beta阶段，并且是<strong>免费</strong>的，自Beta版本发布就有人说正式版发布将会变成收费软件，但是Beta版本发布至今也超过一年了，尚不知道什么时候会推出正式版本。</p><h1 id="特性介绍"><a href="#特性介绍" class="headerlink" title="特性介绍"></a>特性介绍</h1><h2 id="所见即所得"><a href="#所见即所得" class="headerlink" title="所见即所得"></a>所见即所得</h2><p>这是typora最大的特性，在双栏的设计铺天盖地的Markdown编辑器中，要找到一款所见即所得的实属不易，最初吸引我的就是这一个特性。之前也使用过很多Markdown的编辑器，包括<em>MarkdownPad</em>这样专门用于Markdown文件的编辑器和<em>Atom</em>, <em>Sublime</em>这类通过插件支持Markdown的编辑器，他们实现预览都是通过双栏实时预览，但是或多或少都存在着渲染比较卡顿的情况，一旦书写的文字较多，你都可以在预览的窗口看到明显的延迟。typora虽然在推出之初也存在着这样的问题，但是更新到现在的版本已经是相当流畅了。相比于其他的软件，typora给你的视觉体验更好，你在编辑器中几乎找不到Markdown的语法代码，一旦输入，typora就会进行实时渲染。</p><p><img src="/2018/04/03/typora-into/1.jpg" alt="1"></p><p><img src="/2018/04/03/typora-into/2.jpg" alt="2"></p><blockquote><p>一旦输入完成，敲击回车或者方向下键，typora就会马上给你呈现最终的效果</p></blockquote><h2 id="图片插入"><a href="#图片插入" class="headerlink" title="图片插入"></a>图片插入</h2><p>刚开始使用Markdown的用户最介意的可能就是Markdown在插入图片上的不方便，在Word上只需要通过简单的拖拽实现的插入过程，在Markdown中你甚至还需要输入图片的路径，给高效的输入带来了一定的阻碍。在typora中你需要做的，只是把图片拖到编辑框中。</p><p><img src="/2018/04/03/typora-into/3.jpg" alt="3"></p><blockquote><p>将图片拖到编辑器中可以直接看到最终效果。</p></blockquote><h2 id="LaTeX-的良好支持"><a href="#LaTeX-的良好支持" class="headerlink" title="$\LaTeX$的良好支持"></a>$\LaTeX$的良好支持</h2><p>作为一个$\LaTeX$的使用者，Markdown是要比$\LaTeX$更加简单快捷的，但是$\LaTeX$一个很大的优势就是数学公式的使用，在typora中你无需担心这一点，typora中的$\LaTeX$使用和在$\LaTeX$的编辑环境中完全相同，即使是在学术上的使用也完全不虚。</p><p><img src="/2018/04/03/typora-into/4.jpg" alt="4"></p><blockquote><p>数学公式输入效果</p></blockquote><h2 id="文件导出"><a href="#文件导出" class="headerlink" title="文件导出"></a>文件导出</h2><blockquote><p>很多软件都将导出pdf文件作为软件的高级功能，只有收费才能实现，但是typora现阶段是完全免费的，并且也支持pdf的导出效果，第一次使用的时候会需要安装<em>Pandoc</em>，之后重启编辑器即可</p></blockquote><h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><p>在typora中，你可以通过<code>Ctrl+1</code>来表示一级标题，同理<code>Ctrl+2</code>来表示二级标题，并且typora的高级设置中支持快捷键的自定义，对于习惯于使用快捷键的用户来说也是相当方便的。 </p><h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>相比于其他的编辑器，typora的最大优势在于<strong>所见即所得，免费，对$\LaTeX$的良好支持</strong>，在操作和视觉显示上他接近于Word，但是排版的美观程度又更贴近于$\LaTeX$的效果， 非常适合日常使用。</p>]]></content>
+      
       <categories>
-        <category>计算机</category>
-        <category>软件</category>
+          
+          <category> 计算机 </category>
+          
+          <category> 软件 </category>
+          
       </categories>
-      <tags>
-        <tag>Markdown</tag>
-        <tag>软件</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+            <tag> 软件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+  
+  
 </search>

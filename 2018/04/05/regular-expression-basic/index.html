@@ -1,134 +1,53 @@
 <!DOCTYPE html>
-
-
-
-  
-
-
-<html class="theme-next muse use-motion" lang="zh-Hans">
+<html lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.2.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
 
 
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"rosecabbage.cc","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
 
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
-
-
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
-
-
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
-
-
-  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
-
-
-
-
-
-  <meta name="keywords" content="正则表达式,计算机," />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="RoseLand" type="application/atom+xml" />
-
-
-
-
-
-
-<meta name="description" content="虽然早先就知道了正则表达式，但是一直没有详细的了解过（感觉是很高端的操作），但是又觉得会很有用（前提是掌握的很溜，否则可能错误不断），就去学习了一下，写此笔记。">
-<meta name="keywords" content="正则表达式,计算机">
+  <meta name="description" content="虽然早先就知道了正则表达式，但是一直没有详细的了解过（感觉是很高端的操作），但是又觉得会很有用（前提是掌握的很溜，否则可能错误不断），就去学习了一下，写此笔记。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="正则表达式（入门）">
 <meta property="og:url" content="http://rosecabbage.cc/2018/04/05/regular-expression-basic/index.html">
 <meta property="og:site_name" content="RoseLand">
 <meta property="og:description" content="虽然早先就知道了正则表达式，但是一直没有详细的了解过（感觉是很高端的操作），但是又觉得会很有用（前提是掌握的很溜，否则可能错误不断），就去学习了一下，写此笔记。">
-<meta property="og:locale" content="zh-Hans">
+<meta property="og:locale">
 <meta property="og:image" content="http://rosecabbage.cc/2018/04/05/regular-expression-basic/regular_expression-1.png">
-<meta property="og:updated_time" content="2020-09-21T07:41:23.944Z">
+<meta property="article:published_time" content="2018-04-05T08:34:30.000Z">
+<meta property="article:modified_time" content="2020-09-21T07:41:23.944Z">
+<meta property="article:author" content="Rose">
+<meta property="article:tag" content="正则表达式">
+<meta property="article:tag" content="计算机">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="正则表达式（入门）">
-<meta name="twitter:description" content="虽然早先就知道了正则表达式，但是一直没有详细的了解过（感觉是很高端的操作），但是又觉得会很有用（前提是掌握的很溜，否则可能错误不断），就去学习了一下，写此笔记。">
 <meta name="twitter:image" content="http://rosecabbage.cc/2018/04/05/regular-expression-basic/regular_expression-1.png">
 
+<link rel="canonical" href="http://rosecabbage.cc/2018/04/05/regular-expression-basic/">
 
 
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Muse',
-    version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: true,
-    tabs: true,
-    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-Hans'
   };
 </script>
-
-
-
-  <link rel="canonical" href="http://rosecabbage.cc/2018/04/05/regular-expression-basic/"/>
-
-
-
-
 
   <title>正则表达式（入门） | RoseLand</title>
   
@@ -138,184 +57,149 @@
 
 
 
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
 
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
 
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-  
-    
-  
-
-  <div class="container sidebar-position-left page-post-detail">
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
     <div class="headband"></div>
 
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">RoseLand</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
     </div>
-      
-        <p class="site-subtitle"></p>
-      
   </div>
 
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">RoseLand</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
   </div>
 </div>
 
+
+
+
 <nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
+  <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a>
+
+  </li>
         <li class="menu-item menu-item-archives">
-          <a href="/archives/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
 
-      
-    </ul>
-  
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives</a>
 
-  
+  </li>
+  </ul>
 </nav>
 
 
 
- </div>
+
+</div>
     </header>
 
-    <main id="main" class="main">
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
       <div class="main-inner">
         <div class="content-wrap">
-          <div id="content" class="content">
+          
+
+          <div class="content post posts-expand">
             
 
-  <div id="posts" class="posts-expand">
     
-
-  
-
   
   
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-Hans">
     <link itemprop="mainEntityOfPage" href="http://rosecabbage.cc/2018/04/05/regular-expression-basic/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Rose">
-      <meta itemprop="description" content="">
       <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Rose">
+      <meta itemprop="description" content="RUN AS ONE">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
       <meta itemprop="name" content="RoseLand">
     </span>
-
-    
       <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">正则表达式（入门）</h1>
-        
+        <h1 class="post-title" itemprop="name headline">
+          正则表达式（入门）
+        </h1>
 
         <div class="post-meta">
-          <span class="post-time">
-            
+            <span class="post-meta-item">
               <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
+                <i class="far fa-calendar"></i>
               </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-05T16:34:30+08:00">
-                2018-04-05
-              </time>
-            
+              <span class="post-meta-item-text">Posted on</span>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/计算机/" itemprop="url" rel="index">
-                    <span itemprop="name">计算机</span>
-                  </a>
-                </span>
-
-                
-                
-              
+              <time title="Created: 2018-04-05 16:34:30" itemprop="dateCreated datePublished" datetime="2018-04-05T16:34:30+08:00">2018-04-05</time>
             </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">Edited on</span>
+                <time title="Modified: 2020-09-21 15:41:23" itemprop="dateModified" datetime="2020-09-21T15:41:23+08:00">2020-09-21</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" itemprop="url" rel="index"><span itemprop="name">计算机</span></a>
+                </span>
+            </span>
 
           
 
         </div>
       </header>
-    
 
     
     
@@ -323,14 +207,12 @@
     <div class="post-body" itemprop="articleBody">
 
       
-      
-
-      
         <p><img src="/2018/04/05/regular-expression-basic/regular_expression-1.png" alt="regular_expression-1"></p>
 <blockquote>
 <p>虽然早先就知道了正则表达式，但是一直没有详细的了解过（感觉是很高端的操作），但是又觉得会很有用（前提是掌握的很溜，否则可能错误不断），就去学习了一下，写此笔记。</p>
 </blockquote>
 <a id="more"></a> 
+
 <h2 id="正则表达式简介"><a href="#正则表达式简介" class="headerlink" title="正则表达式简介"></a>正则表达式简介</h2><h3 id="什么是正则表达式"><a href="#什么是正则表达式" class="headerlink" title="什么是正则表达式"></a>什么是正则表达式</h3><ul>
 <li>正则表达式，又称正规表示法、常规表示法(Regular Expression，简写为regex, regrep, RE)，是计算机科学的一个概念</li>
 <li>正则表达式使用单个字符串来描述、匹配一系列符合某个句法规则的字符串</li>
@@ -351,16 +233,16 @@
 <li><code>^</code>    匹配字符串的开始</li>
 <li><code>$</code>    匹配字符串的结束</li>
 </ul>
-<p>元字符<code>^</code>和<code>$</code>都匹配一个位置，这和<code>\b</code>有点类似。<code>^</code>匹配你要用来查找的字符串的开头，<code>$</code>匹配结尾。这两个代码在验证输入的内容时非常有用，比如一个网站如果要求你填写的QQ号必须为5位到12位数字时，可以使用：<code>^\d{5,12}$</code>。</p>
+<p>元字符<code>^</code>和<code>$</code>都匹配一个位置，这和<code>\b</code>有点类似。<code>^</code>匹配你要用来查找的字符串的开头，<code>$</code>匹配结尾。这两个代码在验证输入的内容时非常有用，比如一个网站如果要求你填写的QQ号必须为5位到12位数字时，可以使用：<code>^\d&#123;5,12&#125;$</code>。</p>
 <h3 id="字符转义"><a href="#字符转义" class="headerlink" title="字符转义"></a>字符转义</h3><p>如果想查找元字符本身的话，不能直接指定他们，需要使用<code>\</code> 来取消他们的特殊含义，比如<code>\.</code> 和<code>\*</code> 。</p>
 <p>类似的，如果要查找<code>\</code> ，也需要用<code>\\</code> 。</p>
 <h3 id="重复"><a href="#重复" class="headerlink" title="重复"></a>重复</h3><ul>
-<li><code>*</code>          重复零次或更多</li>
+<li><code>* </code>          重复零次或更多</li>
 <li><code>+</code>          重复一次或更多</li>
 <li><code>?</code>          重复零次或一次</li>
-<li><code>{n}</code>      重复n次</li>
-<li><code>{n,}</code>    重复n次或更多</li>
-<li><code>{n,m}</code>  重复n次到m次</li>
+<li><code>&#123;n&#125;</code>      重复n次</li>
+<li><code>&#123;n,&#125;</code>    重复n次或更多</li>
+<li><code>&#123;n,m&#125;</code>  重复n次到m次</li>
 </ul>
 <p>例子：</p>
 <ul>
@@ -370,21 +252,21 @@
 <h3 id="字符类"><a href="#字符类" class="headerlink" title="字符类"></a>字符类</h3><p>要想查找数字、字母和数字或者空白是很简单的（只要元字符就可以实现了），但是要匹配没有预定义元字符的字符集合（比如元音字母）光靠前面的元字符就不够了。</p>
 <p><code>[aeiou]</code> 可以匹配任何一个英文元音字母</p>
 <p><code>[.?!]</code> 匹配标点符号</p>
-<p><code>[0-9]</code> 的含义和 <code>\d</code> 完全一致，类似的，<code>[a-z0-9A-Z_]</code> 等同于<code>\w</code> （如果只考虑英文）</p>
-<p><code>\(?0\d{2}[) -]?\d{8}</code> 可以匹配几种格式的电话号码：</p>
+<p><code>[0-9]</code> 的含义和 <code>\d</code> 完全一致，类似的，<code>[a-z0-9A-Z_] </code> 等同于<code>\w</code> （如果只考虑英文）</p>
+<p><code>\(?0\d&#123;2&#125;[) -]?\d&#123;8&#125;</code> 可以匹配几种格式的电话号码：</p>
 <ul>
 <li>(010)88886666</li>
 <li>022-22334455</li>
 <li>02912345678</li>
 </ul>
 <p><em>首先是左括号出现零次或一次，然后是0，后面跟着两位数字，然后是右括号、空格、或者-中的一个或不出现，这之后是8个数字</em></p>
-<h3 id="分枝条件"><a href="#分枝条件" class="headerlink" title="分枝条件"></a>分枝条件</h3><p><code>\(?0\d{2}[) -]?\d{8}</code> 也能匹配不正确的格式（比如<em>010)12345678</em> ）</p>
+<h3 id="分枝条件"><a href="#分枝条件" class="headerlink" title="分枝条件"></a>分枝条件</h3><p><code>\(?0\d&#123;2&#125;[) -]?\d&#123;8&#125;</code> 也能匹配不正确的格式（比如<em>010)12345678</em> ）</p>
 <p>正则表达式里的分枝条件指的是<strong>有几种规则，满足任一种规则都当成匹配</strong>，具体方法是<strong>用 | 把不同的规则分隔开</strong></p>
 <p>例子：</p>
 <ul>
-<li><code>0\d{2}-\d{8}|0\d{3}-\d{7}</code> 匹配两种格式，一种是3位区号8位本地号（010-88888888），一种是4位区号7位本地号（0571-7777777）</li>
-<li><code>\(0\d{2}\)[- ]?\d{8}|0\d{2}[- ]?\d{8}</code> 匹配3位区号的电话号码，其中分枝条件表示三位区号可以用括号括起来，也可以不使用括号，但是括号必须成对出现</li>
-<li><code>\d{5}-\d{4}|\d{5}</code> 匹配美国的邮政编码（5位数字或者-间隔的9位数字）</li>
+<li><code>0\d&#123;2&#125;-\d&#123;8&#125;|0\d&#123;3&#125;-\d&#123;7&#125;</code> 匹配两种格式，一种是3位区号8位本地号（010-88888888），一种是4位区号7位本地号（0571-7777777）</li>
+<li><code>\(0\d&#123;2&#125;\)[- ]?\d&#123;8&#125;|0\d&#123;2&#125;[- ]?\d&#123;8&#125;</code> 匹配3位区号的电话号码，其中分枝条件表示三位区号可以用括号括起来，也可以不使用括号，但是括号必须成对出现</li>
+<li><code>\d&#123;5&#125;-\d&#123;4&#125;|\d&#123;5&#125;</code> 匹配美国的邮政编码（5位数字或者-间隔的9位数字）</li>
 </ul>
 <blockquote>
 <p>使用分枝条件一定要注意各个条件的顺序，如果调换上面第三个例子中的两个条件的顺序，那么只能匹配5位的邮编或者9位邮编的前5位，这样的原因是，<strong>匹配分枝条件的时候，从左到右测试每个条件，一旦匹配就不会管其他的条件</strong></p>
@@ -392,9 +274,9 @@
 <h3 id="分组"><a href="#分组" class="headerlink" title="分组"></a>分组</h3><p>分组的一个最基本的应用就是重复多个字符，使用的方法是用小括号指定<strong>子表达式</strong>，或者也称为<strong>分组</strong>。</p>
 <p>例子</p>
 <ul>
-<li><code>(\d{1,3}\.){3}\d{1,3}</code> 这是一个IP地址匹配的表达式，<code>\d{1,3}\.</code> 表示一位到三位数字后面跟着一个点号，用小括号括起来之后跟着<code>{3}</code> 表示这样的格式重复三次，最后再加上一位到三位的数字。</li>
+<li><code>(\d&#123;1,3&#125;\.)&#123;3&#125;\d&#123;1,3&#125;</code> 这是一个IP地址匹配的表达式，<code>\d&#123;1,3&#125;\.</code> 表示一位到三位数字后面跟着一个点号，用小括号括起来之后跟着<code>&#123;3&#125;</code> 表示这样的格式重复三次，最后再加上一位到三位的数字。</li>
 <li>事实上这并不是一个正确的表达式，因为他也可以匹配到超过255的并不存在的IP地址，在这里举出这个例子只是说明分组的一种使用方法。</li>
-<li><code>((2[0-4]\d|25[0-5]|[01]?\d\d?)\.){3}(2[0-4]\d|25[0-5]|[01]?\d\d?)</code> 才是正确的IP地址的匹配表达式</li>
+<li><code>((2[0-4]\d|25[0-5]|[01]?\d\d?)\.)&#123;3&#125;(2[0-4]\d|25[0-5]|[01]?\d\d?)</code> 才是正确的IP地址的匹配表达式</li>
 </ul>
 <h3 id="反义"><a href="#反义" class="headerlink" title="反义"></a>反义</h3><p>反义指的是<strong>不属于某个能简单定义的字符类的字符</strong></p>
 <ul>
@@ -424,281 +306,192 @@
 <p><code>(?&lt;=exp)</code>是零宽度正回顾后发断言</p>
 <h3 id="负向零宽断言"><a href="#负向零宽断言" class="headerlink" title="负向零宽断言"></a>负向零宽断言</h3><p>零宽度负预测先行断言<code>(?!exp)</code> </p>
 <ul>
-<li><code>\d{3}(?!\d)</code> 匹配三位数字，并且三位数字之后不能是数字</li>
+<li><code>\d&#123;3&#125;(?!\d)</code> 匹配三位数字，并且三位数字之后不能是数字</li>
 <li><code>\b((?!abc)\w)+\b</code> 匹配不包含连续字符串abc的单词</li>
 </ul>
 <p>零宽度负回顾后发断言<code>(?&lt;!exp)</code></p>
 <ul>
-<li><code>(?&lt;![a-z])\d{7}</code> 匹配前面不是小写字母的数字7</li>
+<li><code>(?&lt;![a-z])\d&#123;7&#125;</code> 匹配前面不是小写字母的数字7</li>
 </ul>
 <h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><p><code>(?#comment)</code> 即可包含注释</p>
 <h3 id="贪婪与懒惰"><a href="#贪婪与懒惰" class="headerlink" title="贪婪与懒惰"></a>贪婪与懒惰</h3><h4 id="贪婪"><a href="#贪婪" class="headerlink" title="贪婪"></a>贪婪</h4><p>当正则表达式中包含能接受重复的限定符时，通常的行为是（在使整个表达式能得到匹配的前提下）匹配<strong>尽可能多</strong>的字符。这被称为贪婪匹配。</p>
 <h4 id="懒惰"><a href="#懒惰" class="headerlink" title="懒惰"></a>懒惰</h4><p>类似的，懒惰匹配指的是匹配尽可能少的字符。</p>
 <p>前面提到的限定符都可以转化为懒惰匹配模式</p>
-<p>使用方法是在他后面加上一个问号<strong>?</strong></p>
+<p>使用方法是在他后面加上一个问号**?**</p>
 <p><code>.*?</code> 表示的任意数量的重复，但是使用最少的重复   </p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>上面的这些只是正则表达式最基础的一些内容，非常感谢<a href="http://deerchao.net/tutorials/regex/regex.htm" target="_blank" rel="noopener">正则表达式30分钟入门教程</a>花费我绝对不止三十分钟才对正则表达式有了很基础的了解。 </p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>上面的这些只是正则表达式最基础的一些内容，非常感谢<a target="_blank" rel="noopener" href="http://deerchao.net/tutorials/regex/regex.htm">正则表达式30分钟入门教程</a>花费我绝对不止三十分钟才对正则表达式有了很基础的了解。 </p>
 
-      
     </div>
+
     
     
     
 
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/正则表达式/" rel="tag"># 正则表达式</a>
-          
-            <a href="/tags/计算机/" rel="tag"># 计算机</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/04/03/typora-into/" rel="next" title="typora - 这大概是我用过的最好的Markdown编辑器">
-                <i class="fa fa-chevron-left"></i> typora - 这大概是我用过的最好的Markdown编辑器
-              </a>
-            
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" rel="tag"># 正则表达式</a>
+              <a href="/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/" rel="tag"># 计算机</a>
           </div>
 
-          <span class="post-nav-divider"></span>
+        
 
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/06/markdown/" rel="prev" title="Markdown指南">
-                Markdown指南 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
 
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2018/04/03/typora-into/" rel="prev" title="typora - 这大概是我用过的最好的Markdown编辑器">
+      <i class="fa fa-chevron-left"></i> typora - 这大概是我用过的最好的Markdown编辑器
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2018/04/06/markdown/" rel="next" title="Markdown指南">
+      Markdown指南 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
   </article>
+  
+  
+  
 
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
 
 
           </div>
           
 
-
-          
-
-  
-
-
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview-wrap sidebar-panel">
-        <div class="site-overview">
-          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-            
-              <p class="site-author-name" itemprop="name">Rose</p>
-              <p class="site-description motion-element" itemprop="description">RUN AS ONE</p>
-          </div>
-
-          <nav class="site-state motion-element">
-
-            
-              <div class="site-state-item site-state-posts">
-              
-                <a href="/archives/">
-              
-                  <span class="site-state-item-count">8</span>
-                  <span class="site-state-item-name">日志</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-categories">
-                <a href="/categories/index.html">
-                  <span class="site-state-item-count">5</span>
-                  <span class="site-state-item-name">分类</span>
-                </a>
-              </div>
-            
-
-            
-              
-              
-              <div class="site-state-item site-state-tags">
-                <a href="/tags/index.html">
-                  <span class="site-state-item-count">7</span>
-                  <span class="site-state-item-name">标签</span>
-                </a>
-              </div>
-            
-
-          </nav>
-
-          
-            <div class="feed-link motion-element">
-              <a href="/atom.xml" rel="alternate">
-                <i class="fa fa-rss"></i>
-                RSS
-              </a>
-            </div>
-          
-
-          
-
-          
-          
-
-          
-          
-
-          
-
-        </div>
-      </section>
-
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#正则表达式简介"><span class="nav-number">1.</span> <span class="nav-text">正则表达式简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是正则表达式"><span class="nav-number">1.1.</span> <span class="nav-text">什么是正则表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么时候会用到正则表达式"><span class="nav-number">1.2.</span> <span class="nav-text">什么时候会用到正则表达式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正则表达式基本语法"><span class="nav-number">2.</span> <span class="nav-text">正则表达式基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#元字符"><span class="nav-number">2.1.</span> <span class="nav-text">元字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符转义"><span class="nav-number">2.2.</span> <span class="nav-text">字符转义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重复"><span class="nav-number">2.3.</span> <span class="nav-text">重复</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符类"><span class="nav-number">2.4.</span> <span class="nav-text">字符类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分枝条件"><span class="nav-number">2.5.</span> <span class="nav-text">分枝条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分组"><span class="nav-number">2.6.</span> <span class="nav-text">分组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#反义"><span class="nav-number">2.7.</span> <span class="nav-text">反义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#后向引用"><span class="nav-number">2.8.</span> <span class="nav-text">后向引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#零宽断言"><span class="nav-number">2.9.</span> <span class="nav-text">零宽断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#负向零宽断言"><span class="nav-number">2.10.</span> <span class="nav-text">负向零宽断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#注释"><span class="nav-number">2.11.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#贪婪与懒惰"><span class="nav-number">2.12.</span> <span class="nav-text">贪婪与懒惰</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#贪婪"><span class="nav-number">2.12.1.</span> <span class="nav-text">贪婪</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#懒惰"><span class="nav-number">2.12.2.</span> <span class="nav-text">懒惰</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#总结"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
-
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
-  <span class="with-love">
-    <i class="fa fa-user"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Rose</span>
-
-  
-</div>
-
-
-  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
-
-
-
-  <span class="post-meta-divider">|</span>
-
-
-
-  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
-
-
-
-
-        
-
-
-
-
-
-
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-    
-
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
   }
 </script>
 
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%AE%80%E4%BB%8B"><span class="nav-number">1.</span> <span class="nav-text">正则表达式简介</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">1.1.</span> <span class="nav-text">什么是正则表达式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%80%E4%B9%88%E6%97%B6%E5%80%99%E4%BC%9A%E7%94%A8%E5%88%B0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F"><span class="nav-number">1.2.</span> <span class="nav-text">什么时候会用到正则表达式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">正则表达式基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%85%83%E5%AD%97%E7%AC%A6"><span class="nav-number">2.1.</span> <span class="nav-text">元字符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E8%BD%AC%E4%B9%89"><span class="nav-number">2.2.</span> <span class="nav-text">字符转义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%87%8D%E5%A4%8D"><span class="nav-number">2.3.</span> <span class="nav-text">重复</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E7%B1%BB"><span class="nav-number">2.4.</span> <span class="nav-text">字符类</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E6%9E%9D%E6%9D%A1%E4%BB%B6"><span class="nav-number">2.5.</span> <span class="nav-text">分枝条件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%88%86%E7%BB%84"><span class="nav-number">2.6.</span> <span class="nav-text">分组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%8D%E4%B9%89"><span class="nav-number">2.7.</span> <span class="nav-text">反义</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%90%8E%E5%90%91%E5%BC%95%E7%94%A8"><span class="nav-number">2.8.</span> <span class="nav-text">后向引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%9B%B6%E5%AE%BD%E6%96%AD%E8%A8%80"><span class="nav-number">2.9.</span> <span class="nav-text">零宽断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B4%9F%E5%90%91%E9%9B%B6%E5%AE%BD%E6%96%AD%E8%A8%80"><span class="nav-number">2.10.</span> <span class="nav-text">负向零宽断言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%B3%A8%E9%87%8A"><span class="nav-number">2.11.</span> <span class="nav-text">注释</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B4%AA%E5%A9%AA%E4%B8%8E%E6%87%92%E6%83%B0"><span class="nav-number">2.12.</span> <span class="nav-text">贪婪与懒惰</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%B4%AA%E5%A9%AA"><span class="nav-number">2.12.1.</span> <span class="nav-text">贪婪</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%87%92%E6%83%B0"><span class="nav-number">2.12.2.</span> <span class="nav-text">懒惰</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%80%BB%E7%BB%93"><span class="nav-number">3.</span> <span class="nav-text">总结</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Rose</p>
+  <div class="site-description" itemprop="description">RUN AS ONE</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Rose</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a>
+  </div>
+
+        
 
 
 
 
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
 
 
 
@@ -716,111 +509,8 @@
 
 
 
-  
-  
-    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-  
-
-  
-  
-    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-  
 
 
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
-
-
-
-  
-  
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-  
-
-  
 
   
 
