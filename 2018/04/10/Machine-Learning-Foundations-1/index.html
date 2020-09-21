@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="机器学习,笔记," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="RoseLand" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="课程内容来自于国立台湾大学-林轩田-機器學習基石 视频内容 機器學習基石，图片内容来源于视频课件">
+<meta name="keywords" content="机器学习,笔记">
+<meta property="og:type" content="article">
+<meta property="og:title" content="机器学习基石笔记（一）">
+<meta property="og:url" content="http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/index.html">
+<meta property="og:site_name" content="RoseLand">
+<meta property="og:description" content="课程内容来自于国立台湾大学-林轩田-機器學習基石 视频内容 機器學習基石，图片内容来源于视频课件">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/TIM截图20180409152956.png">
+<meta property="og:image" content="http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/TIM截图20180409153617.png">
+<meta property="og:image" content="http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/TIM截图20180409201454.png">
+<meta property="og:image" content="http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/TIM截图20180409213350.png">
+<meta property="og:image" content="http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/TIM截图20180409213527.png">
+<meta property="og:image" content="http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/TIM截图20180409213628.png">
+<meta property="og:updated_time" content="2020-09-21T07:41:23.931Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="机器学习基石笔记（一）">
+<meta name="twitter:description" content="课程内容来自于国立台湾大学-林轩田-機器學習基石 视频内容 機器學習基石，图片内容来源于视频课件">
+<meta name="twitter:image" content="http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/TIM截图20180409152956.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/"/>
+
+
+
+
+
+  <title>机器学习基石笔记（一） | RoseLand</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">RoseLand</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rose">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RoseLand">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">机器学习基石笔记（一）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-10T16:47:10+08:00">
+                2018-04-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/计算机/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/计算机/机器学习/" itemprop="url" rel="index">
+                    <span itemprop="name">机器学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>课程内容来自于国立台湾大学-林轩田-機器學習基石</p>
+<p>视频内容 <a href="https://www.youtube.com/playlist?list=PLXVfgk9fNX2I7tB6oIINGBmW50rrmFTqf" target="_blank" rel="noopener">機器學習基石</a>，图片内容来源于视频课件</p>
+</blockquote>
+<a id="more"></a>
+<p>基本架构：</p>
+<ul>
+<li>When Can Machines Learn?</li>
+<li>Why Can Machines Learn?</li>
+<li>How Can Machines Learn?</li>
+<li>How Can Machines Learn <strong>Better</strong>?</li>
+</ul>
+<h2 id="什么是机器学习"><a href="#什么是机器学习" class="headerlink" title="什么是机器学习"></a>什么是机器学习</h2><p><strong>机器学习</strong>：我们用电脑来模仿人学习的过程（通过观察经过一番处理变成有用的技巧）</p>
+<p><strong>技巧</strong>：增进某一种表现</p>
+<p><img src="/2018/04/10/Machine-Learning-Foundations-1/TIM截图20180409152956.png" alt="TIM截图20180409152956"></p>
+<h2 id="为什么使用机器学习？"><a href="#为什么使用机器学习？" class="headerlink" title="为什么使用机器学习？"></a>为什么使用机器学习？</h2><p>例子：如何辨识一棵树？</p>
+<ul>
+<li>通过观察很多的树得到技巧（辨识树）</li>
+</ul>
+<p>机器学习是取代复杂系统的一种方式</p>
+<p><img src="/2018/04/10/Machine-Learning-Foundations-1/TIM截图20180409153617.png" alt="TIM截图20180409153617"></p>
+<p>机器学习的三个关键</p>
+<ul>
+<li>要有表现可以增进（有一些模式可以被学习）</li>
+<li>没有程序化的定义</li>
+<li>有关于这个模式的数据</li>
+</ul>
+<h2 id="机器学习的应用"><a href="#机器学习的应用" class="headerlink" title="机器学习的应用"></a>机器学习的应用</h2><p><img src="/2018/04/10/Machine-Learning-Foundations-1/TIM截图20180409201454.png" alt="TIM截图20180409201454"></p>
+<p>例：我们如何确定会不会喜欢一部电影</p>
+<ul>
+<li>观看者描述为一串数字（对于各类电影的喜好）</li>
+<li>电影也描述为一串数字（表示是何种类型的电影）</li>
+<li>作内积，看结果的大小表示是否吻合</li>
+<li>从这些rating反推电影和人的特征是什么</li>
+</ul>
+<h2 id="学习的组成部分"><a href="#学习的组成部分" class="headerlink" title="学习的组成部分"></a>学习的组成部分</h2><p><strong>基本符号</strong>：</p>
+<ul>
+<li>输入：$x \in \mathcal{X}$</li>
+<li>输出：$y \in \mathcal{Y}$</li>
+<li>目标函数：$f: \mathcal{X} \rightarrow \mathcal{Y}$</li>
+<li>数据：$\mathcal{D} = $ { $(x_1,y_1),(x_2,y_2),…,(x_N,y_N) $ }</li>
+<li>假说：$g:\mathcal{X} \rightarrow \mathcal{Y}$</li>
+<li>假说集：$g \in \mathcal{H} = $ { $h_k$ }</li>
+<li>学习算法：$\mathcal{A}$</li>
+<li>学习模型：$\mathcal{A}$ and $\mathcal{H}$</li>
+</ul>
+<p>注意：</p>
+<ul>
+<li>目标函数$f$是未知的</li>
+<li>$g \approx f$，但很有可能$f \neq g$</li>
+</ul>
+<p><strong>机器学习</strong>：从资料出发，计算出假说$g$，并且希望他很接近目标函数$f$</p>
+<h2 id="机器学习和相关领域"><a href="#机器学习和相关领域" class="headerlink" title="机器学习和相关领域"></a>机器学习和相关领域</h2><h3 id="机器学习和数据挖掘"><a href="#机器学习和数据挖掘" class="headerlink" title="机器学习和数据挖掘"></a>机器学习和数据挖掘</h3><p><img src="/2018/04/10/Machine-Learning-Foundations-1/TIM截图20180409213350.png" alt="TIM截图20180409213350"></p>
+<p>非常相似，取决于数据挖掘的目标是否与机器学习的假说相同</p>
+<h3 id="机器学习和人工智能"><a href="#机器学习和人工智能" class="headerlink" title="机器学习和人工智能"></a>机器学习和人工智能</h3><p><img src="/2018/04/10/Machine-Learning-Foundations-1/TIM截图20180409213527.png" alt="TIM截图20180409213527"></p>
+<ul>
+<li>机器学习是实现人工智能的一种方法</li>
+</ul>
+<h3 id="机器学习和统计"><a href="#机器学习和统计" class="headerlink" title="机器学习和统计"></a>机器学习和统计</h3><p><img src="/2018/04/10/Machine-Learning-Foundations-1/TIM截图20180409213628.png" alt="TIM截图20180409213628"></p>
+<ul>
+<li>统计是实现机器学习的一种方法</li>
+<li>统计学会专注于数学上的推论</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/机器学习/" rel="tag"># 机器学习</a>
+          
+            <a href="/tags/笔记/" rel="tag"># 笔记</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/08/MOP/" rel="next" title="多目标规划方法">
+                <i class="fa fa-chevron-left"></i> 多目标规划方法
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/10/Machine-Learning-Foundations-2/" rel="prev" title="机器学习基石笔记（二）">
+                机器学习基石笔记（二） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Rose</p>
+              <p class="site-description motion-element" itemprop="description">RUN AS ONE</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是机器学习"><span class="nav-number">1.</span> <span class="nav-text">什么是机器学习</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么使用机器学习？"><span class="nav-number">2.</span> <span class="nav-text">为什么使用机器学习？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机器学习的应用"><span class="nav-number">3.</span> <span class="nav-text">机器学习的应用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#学习的组成部分"><span class="nav-number">4.</span> <span class="nav-text">学习的组成部分</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#机器学习和相关领域"><span class="nav-number">5.</span> <span class="nav-text">机器学习和相关领域</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#机器学习和数据挖掘"><span class="nav-number">5.1.</span> <span class="nav-text">机器学习和数据挖掘</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#机器学习和人工智能"><span class="nav-number">5.2.</span> <span class="nav-text">机器学习和人工智能</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#机器学习和统计"><span class="nav-number">5.3.</span> <span class="nav-text">机器学习和统计</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Rose</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

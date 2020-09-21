@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="规划," />
+
+
+
+
+
+  <link rel="alternate" href="/atom.xml" title="RoseLand" type="application/atom+xml" />
+
+
+
+
+
+
+<meta name="description" content="多目标规划是数学规划的一个分支，研究多于一个的目标函数在给定区域上的最优化，通常记为MOP(multi-objective programming)。1896年法国经济学家 V.帕累托最早研究不可比较目标的优化问题，之后数学家做了深入的探讨，但是尚未有一个完全令人满意的定义。">
+<meta name="keywords" content="规划">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多目标规划方法">
+<meta property="og:url" content="http://rosecabbage.cc/2018/04/08/MOP/index.html">
+<meta property="og:site_name" content="RoseLand">
+<meta property="og:description" content="多目标规划是数学规划的一个分支，研究多于一个的目标函数在给定区域上的最优化，通常记为MOP(multi-objective programming)。1896年法国经济学家 V.帕累托最早研究不可比较目标的优化问题，之后数学家做了深入的探讨，但是尚未有一个完全令人满意的定义。">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2020-09-21T07:41:23.931Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="多目标规划方法">
+<meta name="twitter:description" content="多目标规划是数学规划的一个分支，研究多于一个的目标函数在给定区域上的最优化，通常记为MOP(multi-objective programming)。1896年法国经济学家 V.帕累托最早研究不可比较目标的优化问题，之后数学家做了深入的探讨，但是尚未有一个完全令人满意的定义。">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://rosecabbage.cc/2018/04/08/MOP/"/>
+
+
+
+
+
+  <title>多目标规划方法 | RoseLand</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">RoseLand</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://rosecabbage.cc/2018/04/08/MOP/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Rose">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="RoseLand">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">多目标规划方法</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-08T12:58:39+08:00">
+                2018-04-08
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数学/" itemprop="url" rel="index">
+                    <span itemprop="name">数学</span>
+                  </a>
+                </span>
+
+                
+                
+                  ， 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/数学/优化/" itemprop="url" rel="index">
+                    <span itemprop="name">优化</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <blockquote>
+<p>多目标规划是数学规划的一个分支，研究<strong>多于一个的目标函数</strong>在<strong>给定区域</strong>上的最优化，通常记为MOP(multi-objective programming)。1896年法国经济学家 V.帕累托最早研究不可比较目标的优化问题，之后数学家做了深入的探讨，但是<strong>尚未有一个完全令人满意的定义</strong>。</p>
+</blockquote>
+<a id="more"></a>
+<p>求解多目标规划的方法大体上有下面几种：</p>
+<ul>
+<li><strong>化多为少</strong>的方法，把多目标化为比较容易求解的单目标或者双目标，如主要目标法、线性加权法、理想点法。</li>
+<li><strong>分层序列法</strong>，把目标按照其重要性给出一个序列，每次都在前一目标最优解集内求下一个目标最优解，直到求出共同的最优解。</li>
+<li><strong>修正单纯形法</strong></li>
+<li><strong>层次分析法</strong>，是一种定性与定量相结合的多目标决策与分析方法。</li>
+</ul>
+<h2 id="多目标规划及其非劣解"><a href="#多目标规划及其非劣解" class="headerlink" title="多目标规划及其非劣解"></a>多目标规划及其非劣解</h2><p>和单目标的规划问题比较相似，都是由目标函数和约束条件组成的，但是多目标规划问题的目标函数大于一个，可以表示为如下形式M<br>$$\max(\min)Z=F(X) $$<br>$$s.t. \quad \Phi(X) \leq G$$</p>
+<p>有n个决策变量，k个目标函数，m个约束方程，则：</p>
+<ul>
+<li>$Z=F(X)$ 是k维函数向量</li>
+<li>$\Phi(X)$是m维函数向量</li>
+<li>$G$是m维函数向量</li>
+</ul>
+<p>多目标规划问题的求解不能只追求一个目标的最优化，而不顾其他的目标。</p>
+<p>对于多目标规划问题，求解就意味着需要作出下面的复合选择：</p>
+<ul>
+<li>每一个目标函数取什么值，原问题可以得到最满意的解决？</li>
+<li>每一个决策变量取什么值，原问题可以得到最满意的解决？</li>
+</ul>
+<p>非劣解指的是，方案之间无法确定优劣（目标函数值互有较优值），但是又没有比他们更好的其他方案，因此他们就被成为多目标规划问题的非劣解或有效解，其余的方案都称为劣解。</p>
+<p>当目标函数处于冲突状态的时候，就不会存在使得所有目标函数同时达到最大或最小值的最优解，于是我们只能寻求非劣解（又称非支配解或帕累托解）</p>
+<h2 id="多目标规划求解技术"><a href="#多目标规划求解技术" class="headerlink" title="多目标规划求解技术"></a>多目标规划求解技术</h2><p>为了求得非劣解，我们常常需要将多目标规划问题转化为单目标规划问题去解决，实现这种转化有如下的建模方法</p>
+<ul>
+<li>效用最优化模型</li>
+<li>罚款模型</li>
+<li>约束模型</li>
+<li>目标达到法</li>
+<li>目标规划模型</li>
+</ul>
+<h3 id="效用最优化模型（线性加权法）"><a href="#效用最优化模型（线性加权法）" class="headerlink" title="效用最优化模型（线性加权法）"></a>效用最优化模型（线性加权法）</h3><p>规划问题的目标函数可以通过<strong>一定的方式</strong>进行求和运算，这种方法将一系列的<strong>目标函数</strong>与<strong>效用函数</strong>建立相关关系，各目标之间通过效用函数协调，使多目标规划问题转化为传统的单目标规划问题。<br>$$\max Z=\Psi(X)$$<br>$$s.t.   \quad \Phi(X) \leq G$$<br>$\Psi$是与各目标函数相关的效应函数的和函数</p>
+<p>在<strong>用效用函数作为规划目标</strong>的时候，需要<strong>确定一组权值</strong>$\lambda_i$来反映原问题中各目标函数在总体目标中的权重。</p>
+<h3 id="罚款模型（理想点法）"><a href="#罚款模型（理想点法）" class="headerlink" title="罚款模型（理想点法）"></a>罚款模型（理想点法）</h3><p>规划决策者对每一个目标函数都能提出所<strong>期望的值</strong>（或称<strong>满意值</strong>）</p>
+<p>通过比较实际值$f_i$与期望值$f_i^{*}$之间的偏差来选择问题的解，数学表达式如下: </p>
+<p>$$\min Z = \Sigma_{i=1}^k \lambda_i (f_i-f_i^{*})^2 $$<br>$$\Phi_i(x_1,x_2,…,x_n) \leq g_i(i=1,2,…,m)$$</p>
+<h3 id="约束模型（极大极小法）"><a href="#约束模型（极大极小法）" class="headerlink" title="约束模型（极大极小法）"></a>约束模型（极大极小法）</h3><p>若规划问题的<strong>某一目标</strong>可以给出一个可供选择的范围，则该目标就可以<strong>作为约束条件</strong>而被排除出目标组，进入约束条件组中。</p>
+<p>例如，除了第一个目标外，其余目标都可以提出一个可供选择的范围，那么这个多目标规划问题就可以转化为单目标规划问题：<br>$$\max(\min)Z=f_1(x_1,x_2,…,x_n)$$<br>$$\varphi_i(x_1,x_2,…,x_n) \leq g_i(x_1,x_2,..,x_n) $$<br>$$f_j^{\min} \leq f_j \leq f_j^{\max}$$</p>
+<h3 id="目标到达法"><a href="#目标到达法" class="headerlink" title="目标到达法"></a>目标到达法</h3><p>在求解之前先设计与目标函数相应的一组目标值理想化的期望目标$f_i^{*}(i=1,2,…,k)$ </p>
+<p>每一个目标对应的权重系数为$\omega^{*}_i(i=1,2,…,k)$ </p>
+<p>松弛因子为$\gamma$</p>
+<p>那么，多目标规划问题就转化为：<br>$$\min \limits_{X,\gamma} \gamma $$<br>$$\varphi_i(X) \leq 0(i=1,2,…,k)$$<br>$$f_i(X)-\omega_i\gamma \leq f_i^*(i=1,2,…,k)$$</p>
+<h3 id="目标规划模型（目标规划法）"><a href="#目标规划模型（目标规划法）" class="headerlink" title="目标规划模型（目标规划法）"></a>目标规划模型（目标规划法）</h3><p>首先需要预先确定各个目标的期望值$f_i^{*}$<br>同时给每一个目标赋予一个<strong>优先因子</strong>和<strong>权系数</strong>，假定有$K$个目标，$L$个优先级($L \leq K$)，目标规划模型的数学形式为：<br>$$\min Z = \sum \limits_{l=1}^{L}p_l \sum \limits_{k=1}^{K}(\omega_{lk}^-d_k^-+\omega_{lk}^+d_k^+)$$<br>$$\varphi_i(x_1,x_2,…,x_n) \leq g_i(i=1,2,…,m)$$ </p>
+<p>$$f_i+d_i^{-}-d_i^{+} = f_i^{*}(i=1,2,…,K)$$<br>其中，</p>
+<ul>
+<li>$d_i^+$和$d_i^-$ 分别表示与$f_i$相应的、与$f_i^*$相比的目标超过值和不足值，即正、负偏差变量</li>
+<li>$p_l$表示第$l$个优先级</li>
+<li>$\omega_{lk}^-$、$\omega_{lk}^+$表示在同一优先级$p_l$中，不同目标的正、负偏差变量的权系数</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/规划/" rel="tag"># 规划</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/04/06/markdown/" rel="next" title="Markdown指南">
+                <i class="fa fa-chevron-left"></i> Markdown指南
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/10/Machine-Learning-Foundations-1/" rel="prev" title="机器学习基石笔记（一）">
+                机器学习基石笔记（一） <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Rose</p>
+              <p class="site-description motion-element" itemprop="description">RUN AS ONE</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+            </div>
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#多目标规划及其非劣解"><span class="nav-number">1.</span> <span class="nav-text">多目标规划及其非劣解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#多目标规划求解技术"><span class="nav-number">2.</span> <span class="nav-text">多目标规划求解技术</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#效用最优化模型（线性加权法）"><span class="nav-number">2.1.</span> <span class="nav-text">效用最优化模型（线性加权法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#罚款模型（理想点法）"><span class="nav-number">2.2.</span> <span class="nav-text">罚款模型（理想点法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#约束模型（极大极小法）"><span class="nav-number">2.3.</span> <span class="nav-text">约束模型（极大极小法）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目标到达法"><span class="nav-number">2.4.</span> <span class="nav-text">目标到达法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#目标规划模型（目标规划法）"><span class="nav-number">2.5.</span> <span class="nav-text">目标规划模型（目标规划法）</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Rose</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
