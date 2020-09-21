@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://rosecabbage.cc/"/>
+  <link href="http://rosecabbage.github.io/"/>
   <updated>2020-09-21T13:41:22.902Z</updated>
-  <id>http://rosecabbage.cc/</id>
+  <id>http://rosecabbage.github.io/</id>
   
   <author>
     <name>Rose</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>机器学习基石笔记（三）</title>
-    <link href="http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-3/"/>
-    <id>http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-3/</id>
+    <link href="http://rosecabbage.github.io/2018/04/10/Machine-Learning-Foundations-3/"/>
+    <id>http://rosecabbage.github.io/2018/04/10/Machine-Learning-Foundations-3/</id>
     <published>2018-04-10T13:31:33.000Z</published>
     <updated>2020-09-21T13:41:22.902Z</updated>
     
@@ -34,21 +34,21 @@
     
     </summary>
     
-      <category term="计算机" scheme="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="http://rosecabbage.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
-      <category term="机器学习" scheme="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://rosecabbage.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="机器学习" scheme="http://rosecabbage.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://rosecabbage.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="笔记" scheme="http://rosecabbage.cc/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="http://rosecabbage.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>机器学习基石笔记（二）</title>
-    <link href="http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-2/"/>
-    <id>http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-2/</id>
+    <link href="http://rosecabbage.github.io/2018/04/10/Machine-Learning-Foundations-2/"/>
+    <id>http://rosecabbage.github.io/2018/04/10/Machine-Learning-Foundations-2/</id>
     <published>2018-04-10T12:32:05.000Z</published>
     <updated>2020-09-21T13:36:54.546Z</updated>
     
@@ -63,21 +63,21 @@
     
     </summary>
     
-      <category term="计算机" scheme="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="http://rosecabbage.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
-      <category term="机器学习" scheme="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://rosecabbage.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="机器学习" scheme="http://rosecabbage.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://rosecabbage.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="笔记" scheme="http://rosecabbage.cc/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="http://rosecabbage.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>机器学习基石笔记（一）</title>
-    <link href="http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/"/>
-    <id>http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/</id>
+    <link href="http://rosecabbage.github.io/2018/04/10/Machine-Learning-Foundations-1/"/>
+    <id>http://rosecabbage.github.io/2018/04/10/Machine-Learning-Foundations-1/</id>
     <published>2018-04-10T08:47:10.000Z</published>
     <updated>2020-09-21T13:36:42.114Z</updated>
     
@@ -92,21 +92,21 @@
     
     </summary>
     
-      <category term="计算机" scheme="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="http://rosecabbage.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
-      <category term="机器学习" scheme="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://rosecabbage.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
     
-      <category term="机器学习" scheme="http://rosecabbage.cc/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
+      <category term="机器学习" scheme="http://rosecabbage.github.io/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
     
-      <category term="笔记" scheme="http://rosecabbage.cc/tags/%E7%AC%94%E8%AE%B0/"/>
+      <category term="笔记" scheme="http://rosecabbage.github.io/tags/%E7%AC%94%E8%AE%B0/"/>
     
   </entry>
   
   <entry>
     <title>多目标规划方法</title>
-    <link href="http://rosecabbage.cc/2018/04/08/MOP/"/>
-    <id>http://rosecabbage.cc/2018/04/08/MOP/</id>
+    <link href="http://rosecabbage.github.io/2018/04/08/MOP/"/>
+    <id>http://rosecabbage.github.io/2018/04/08/MOP/</id>
     <published>2018-04-08T04:58:39.000Z</published>
     <updated>2020-09-21T13:32:25.222Z</updated>
     
@@ -120,19 +120,19 @@
     
     </summary>
     
-      <category term="数学" scheme="http://rosecabbage.cc/categories/%E6%95%B0%E5%AD%A6/"/>
+      <category term="数学" scheme="http://rosecabbage.github.io/categories/%E6%95%B0%E5%AD%A6/"/>
     
-      <category term="优化" scheme="http://rosecabbage.cc/categories/%E6%95%B0%E5%AD%A6/%E4%BC%98%E5%8C%96/"/>
+      <category term="优化" scheme="http://rosecabbage.github.io/categories/%E6%95%B0%E5%AD%A6/%E4%BC%98%E5%8C%96/"/>
     
     
-      <category term="规划" scheme="http://rosecabbage.cc/tags/%E8%A7%84%E5%88%92/"/>
+      <category term="规划" scheme="http://rosecabbage.github.io/tags/%E8%A7%84%E5%88%92/"/>
     
   </entry>
   
   <entry>
     <title>Markdown指南</title>
-    <link href="http://rosecabbage.cc/2018/04/06/markdown/"/>
-    <id>http://rosecabbage.cc/2018/04/06/markdown/</id>
+    <link href="http://rosecabbage.github.io/2018/04/06/markdown/"/>
+    <id>http://rosecabbage.github.io/2018/04/06/markdown/</id>
     <published>2018-04-06T11:22:27.000Z</published>
     <updated>2020-09-21T13:39:46.806Z</updated>
     
@@ -147,17 +147,17 @@
     
     </summary>
     
-      <category term="计算机" scheme="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="http://rosecabbage.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     
-      <category term="Markdown" scheme="http://rosecabbage.cc/tags/Markdown/"/>
+      <category term="Markdown" scheme="http://rosecabbage.github.io/tags/Markdown/"/>
     
   </entry>
   
   <entry>
     <title>正则表达式（入门）</title>
-    <link href="http://rosecabbage.cc/2018/04/05/regular-expression-basic/"/>
-    <id>http://rosecabbage.cc/2018/04/05/regular-expression-basic/</id>
+    <link href="http://rosecabbage.github.io/2018/04/05/regular-expression-basic/"/>
+    <id>http://rosecabbage.github.io/2018/04/05/regular-expression-basic/</id>
     <published>2018-04-05T08:34:30.000Z</published>
     <updated>2020-09-21T13:39:56.945Z</updated>
     
@@ -172,19 +172,19 @@
     
     </summary>
     
-      <category term="计算机" scheme="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="http://rosecabbage.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
     
-      <category term="正则表达式" scheme="http://rosecabbage.cc/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+      <category term="正则表达式" scheme="http://rosecabbage.github.io/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
     
-      <category term="计算机" scheme="http://rosecabbage.cc/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="http://rosecabbage.github.io/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
   </entry>
   
   <entry>
     <title>typora - 这大概是我用过的最好的Markdown编辑器</title>
-    <link href="http://rosecabbage.cc/2018/04/03/typora-into/"/>
-    <id>http://rosecabbage.cc/2018/04/03/typora-into/</id>
+    <link href="http://rosecabbage.github.io/2018/04/03/typora-into/"/>
+    <id>http://rosecabbage.github.io/2018/04/03/typora-into/</id>
     <published>2018-04-03T04:04:34.000Z</published>
     <updated>2020-09-21T13:40:16.160Z</updated>
     
@@ -199,14 +199,14 @@
     
     </summary>
     
-      <category term="计算机" scheme="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+      <category term="计算机" scheme="http://rosecabbage.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
     
-      <category term="软件" scheme="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="http://rosecabbage.github.io/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6/"/>
     
     
-      <category term="Markdown" scheme="http://rosecabbage.cc/tags/Markdown/"/>
+      <category term="Markdown" scheme="http://rosecabbage.github.io/tags/Markdown/"/>
     
-      <category term="软件" scheme="http://rosecabbage.cc/tags/%E8%BD%AF%E4%BB%B6/"/>
+      <category term="软件" scheme="http://rosecabbage.github.io/tags/%E8%BD%AF%E4%BB%B6/"/>
     
   </entry>
   
