@@ -30,7 +30,7 @@
 <meta property="og:image" content="http://rosecabbage.cc/2018/04/06/markdown/i-love-markdown.png">
 <meta property="og:image" content="http://mouapp.com/Mou_128.png">
 <meta property="article:published_time" content="2018-04-06T11:22:27.000Z">
-<meta property="article:modified_time" content="2020-09-21T07:41:23.944Z">
+<meta property="article:modified_time" content="2020-09-21T13:39:46.806Z">
 <meta property="article:author" content="Rose">
 <meta property="article:tag" content="Markdown">
 <meta name="twitter:card" content="summary">
@@ -184,7 +184,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-09-21 15:41:23" itemprop="dateModified" datetime="2020-09-21T15:41:23+08:00">2020-09-21</time>
+                <time title="Modified: 2020-09-21 21:39:46" itemprop="dateModified" datetime="2020-09-21T21:39:46+08:00">2020-09-21</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -212,7 +212,6 @@
 <p>Markdown 是一个 Web 上使用的文本到HTML的转换工具，可以通过简单、易读易写的文本格式生成结构化的HTML文档。目前 github、Stackoverflow 等网站均支持这种格式。</p>
 </blockquote>
 <a id="more"></a>
-
 <h1 id="写在最前"><a href="#写在最前" class="headerlink" title="写在最前"></a>写在最前</h1><p>之前看到一篇用Markdown写学术论文的教程，才知晓Markdown也是博大精深，今天就先铺垫一下，日后准备学会用Markdown写学术论文的操作。</p>
 <p>在下面的内容中，在编辑器中键入的内容都将采用<code>键入代码</code>的格式，而实际会在Markdown中看到的效果，会用引用的方式给出，就比如下面的：</p>
 <blockquote>
@@ -249,7 +248,7 @@
 <li>List3</li>
 </ul>
 </blockquote>
-<p>有序列表则使用<code>1.  </code> 这样的形式进行输入（<strong>点号后有空格</strong>）。但是事实上有序列表前面的数字并不是取决于输入的数字，这就是说，你完全可以随意输入数字：</p>
+<p>有序列表则使用<code>1.</code> 这样的形式进行输入（<strong>点号后有空格</strong>）。但是事实上有序列表前面的数字并不是取决于输入的数字，这就是说，你完全可以随意输入数字：</p>
 <p><code>1. List1</code></p>
 <blockquote>
 <ol>
@@ -267,13 +266,13 @@
 <p><code>- [] 选项一</code></p>
 <blockquote>
 <ul>
-<li><input disabled type="checkbox"> 选项一</li>
+<li>[ ] 选项一</li>
 </ul>
 </blockquote>
 <p><code>- [x] 选项二</code></p>
 <blockquote>
 <ul>
-<li><input checked disabled type="checkbox"> 选项二</li>
+<li>[x] 选项二</li>
 </ul>
 </blockquote>
 <h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>在之前的部分已经出现了相当多的引用的部分了，在Markdown的使用中，引用也是会经常用到的，引用的使用方式是输入<code>&gt;</code> </p>
@@ -309,7 +308,7 @@
 </ul>
 <h2 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h2><p><code>[RoseLand](https://rosecabbage.cc)</code></p>
 <blockquote>
-<p><a href="https://rosecabbage.cc/">RoseLand</a></p>
+<p><a href="https://rosecabbage.cc">RoseLand</a></p>
 </blockquote>
 <p>方括号中表示要在链接上显示的文字，圆括号中就是链接的地址</p>
 <h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>图片的插入和链接比较相似</p>
@@ -344,40 +343,43 @@
 </ul>
 <p>下面是示例</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">| Title 1 | Title 2 | Title 3 |</span><br><span class="line">|:--------|:-------:|--------:|</span><br><span class="line">| Item 1  | Item 2  | Item 3  |</span><br><span class="line">| Item 4  | Item 5  | Item 6  |</span><br></pre></td></tr></table></figure>
-
 <blockquote>
+<div class="table-container">
 <table>
 <thead>
 <tr>
-<th align="left">Title 1</th>
-<th align="center">Title 2</th>
-<th align="right">Title 3</th>
+<th style="text-align:left">Title 1</th>
+<th style="text-align:center">Title 2</th>
+<th style="text-align:right">Title 3</th>
 </tr>
 </thead>
-<tbody><tr>
-<td align="left">Item 1</td>
-<td align="center">Item 2</td>
-<td align="right">Item 3</td>
+<tbody>
+<tr>
+<td style="text-align:left">Item 1</td>
+<td style="text-align:center">Item 2</td>
+<td style="text-align:right">Item 3</td>
 </tr>
 <tr>
-<td align="left">Item 4</td>
-<td align="center">Item 5</td>
-<td align="right">Item 6</td>
+<td style="text-align:left">Item 4</td>
+<td style="text-align:center">Item 5</td>
+<td style="text-align:right">Item 6</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
+</div>
 </blockquote>
 <p><strong>但是，Markdown似乎对合并单元格这样其实比较常用的操作无能为力</strong></p>
 <p>这里推荐一个网站，可以在线生成HTML代码，方便插入——<a target="_blank" rel="noopener" href="http://www.tablesgenerator.com/">Tables Generator</a> </p>
 <h2 id="内嵌CSS样式"><a href="#内嵌CSS样式" class="headerlink" title="内嵌CSS样式"></a>内嵌CSS样式</h2><p><code>&lt;p style=&quot;color: #AD5D0F;font-size: 30px; font-family: &#39;宋体&#39;;&quot;&gt;内嵌样式&lt;/p&gt;</code></p>
 <blockquote>
 <p style="color: #AD5D0F;font-size: 30px; font-family: '宋体';">内嵌样式</p> 
+
 </blockquote>
 <h2 id="脚注"><a href="#脚注" class="headerlink" title="脚注"></a>脚注</h2><p>可以实现参考文献的效果，使用的方法是加入<code>[1]</code>，在文章最后显示脚注</p>
 <figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Markdown 的目标是实现「易读易写」。[^1]</span><br><span class="line">[<span class="string">^1</span>]:[<span class="string">markdown.cn</span>](<span class="link">http://markdown.cn/</span>)</span><br></pre></td></tr></table></figure>
-
 <h2 id="自动邮箱链接"><a href="#自动邮箱链接" class="headerlink" title="自动邮箱链接"></a>自动邮箱链接</h2><p><code>&lt;1525568340@qq.com&gt;</code></p>
 <blockquote>
-<p><a href="mailto:&#x31;&#53;&#50;&#x35;&#x35;&#x36;&#56;&#x33;&#x34;&#48;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#109;">&#x31;&#53;&#50;&#x35;&#x35;&#x36;&#56;&#x33;&#x34;&#48;&#64;&#113;&#113;&#46;&#x63;&#x6f;&#109;</a></p>
+<p><a href="&#109;&#x61;&#105;&#108;&#116;&#111;&#x3a;&#x31;&#53;&#50;&#53;&#x35;&#54;&#56;&#x33;&#x34;&#48;&#x40;&#113;&#113;&#46;&#x63;&#111;&#109;">&#x31;&#53;&#50;&#53;&#x35;&#54;&#56;&#x33;&#x34;&#48;&#x40;&#113;&#113;&#46;&#x63;&#111;&#109;</a></p>
 </blockquote>
 <h1 id="免费编辑器"><a href="#免费编辑器" class="headerlink" title="免费编辑器"></a>免费编辑器</h1><ul>
 <li>Windows 平台<ul>
@@ -495,7 +497,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -590,6 +592,61 @@
 
 
   
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 

@@ -29,7 +29,7 @@
 <meta property="og:locale">
 <meta property="og:image" content="http://rosecabbage.cc/2018/04/05/regular-expression-basic/regular_expression-1.png">
 <meta property="article:published_time" content="2018-04-05T08:34:30.000Z">
-<meta property="article:modified_time" content="2020-09-21T07:41:23.944Z">
+<meta property="article:modified_time" content="2020-09-21T13:39:56.945Z">
 <meta property="article:author" content="Rose">
 <meta property="article:tag" content="正则表达式">
 <meta property="article:tag" content="计算机">
@@ -184,7 +184,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">Edited on</span>
-                <time title="Modified: 2020-09-21 15:41:23" itemprop="dateModified" datetime="2020-09-21T15:41:23+08:00">2020-09-21</time>
+                <time title="Modified: 2020-09-21 21:39:56" itemprop="dateModified" datetime="2020-09-21T21:39:56+08:00">2020-09-21</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -212,7 +212,6 @@
 <p>虽然早先就知道了正则表达式，但是一直没有详细的了解过（感觉是很高端的操作），但是又觉得会很有用（前提是掌握的很溜，否则可能错误不断），就去学习了一下，写此笔记。</p>
 </blockquote>
 <a id="more"></a> 
-
 <h2 id="正则表达式简介"><a href="#正则表达式简介" class="headerlink" title="正则表达式简介"></a>正则表达式简介</h2><h3 id="什么是正则表达式"><a href="#什么是正则表达式" class="headerlink" title="什么是正则表达式"></a>什么是正则表达式</h3><ul>
 <li>正则表达式，又称正规表示法、常规表示法(Regular Expression，简写为regex, regrep, RE)，是计算机科学的一个概念</li>
 <li>正则表达式使用单个字符串来描述、匹配一系列符合某个句法规则的字符串</li>
@@ -237,7 +236,7 @@
 <h3 id="字符转义"><a href="#字符转义" class="headerlink" title="字符转义"></a>字符转义</h3><p>如果想查找元字符本身的话，不能直接指定他们，需要使用<code>\</code> 来取消他们的特殊含义，比如<code>\.</code> 和<code>\*</code> 。</p>
 <p>类似的，如果要查找<code>\</code> ，也需要用<code>\\</code> 。</p>
 <h3 id="重复"><a href="#重复" class="headerlink" title="重复"></a>重复</h3><ul>
-<li><code>* </code>          重复零次或更多</li>
+<li><code>*</code>          重复零次或更多</li>
 <li><code>+</code>          重复一次或更多</li>
 <li><code>?</code>          重复零次或一次</li>
 <li><code>&#123;n&#125;</code>      重复n次</li>
@@ -252,7 +251,7 @@
 <h3 id="字符类"><a href="#字符类" class="headerlink" title="字符类"></a>字符类</h3><p>要想查找数字、字母和数字或者空白是很简单的（只要元字符就可以实现了），但是要匹配没有预定义元字符的字符集合（比如元音字母）光靠前面的元字符就不够了。</p>
 <p><code>[aeiou]</code> 可以匹配任何一个英文元音字母</p>
 <p><code>[.?!]</code> 匹配标点符号</p>
-<p><code>[0-9]</code> 的含义和 <code>\d</code> 完全一致，类似的，<code>[a-z0-9A-Z_] </code> 等同于<code>\w</code> （如果只考虑英文）</p>
+<p><code>[0-9]</code> 的含义和 <code>\d</code> 完全一致，类似的，<code>[a-z0-9A-Z_]</code> 等同于<code>\w</code> （如果只考虑英文）</p>
 <p><code>\(?0\d&#123;2&#125;[) -]?\d&#123;8&#125;</code> 可以匹配几种格式的电话号码：</p>
 <ul>
 <li>(010)88886666</li>
@@ -317,7 +316,7 @@
 <h3 id="贪婪与懒惰"><a href="#贪婪与懒惰" class="headerlink" title="贪婪与懒惰"></a>贪婪与懒惰</h3><h4 id="贪婪"><a href="#贪婪" class="headerlink" title="贪婪"></a>贪婪</h4><p>当正则表达式中包含能接受重复的限定符时，通常的行为是（在使整个表达式能得到匹配的前提下）匹配<strong>尽可能多</strong>的字符。这被称为贪婪匹配。</p>
 <h4 id="懒惰"><a href="#懒惰" class="headerlink" title="懒惰"></a>懒惰</h4><p>类似的，懒惰匹配指的是匹配尽可能少的字符。</p>
 <p>前面提到的限定符都可以转化为懒惰匹配模式</p>
-<p>使用方法是在他后面加上一个问号**?**</p>
+<p>使用方法是在他后面加上一个问号<strong>?</strong></p>
 <p><code>.*?</code> 表示的任意数量的重复，但是使用最少的重复   </p>
 <h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>上面的这些只是正则表达式最基础的一些内容，非常感谢<a target="_blank" rel="noopener" href="http://deerchao.net/tutorials/regex/regex.htm">正则表达式30分钟入门教程</a>花费我绝对不止三十分钟才对正则表达式有了很基础的了解。 </p>
 
@@ -418,7 +417,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -513,6 +512,61 @@
 
 
   
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 

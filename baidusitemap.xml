@@ -4,94 +4,8 @@
 
     
   <url>
-    <loc>http://rosecabbage.cc/2020/09/21/transfer-to-mac/</loc>
-    <lastmod>2020-09-21T07:54:43.321Z</lastmod>
-    <data>
-        <display>
-        <title>transfer_to_mac</title>
-        <pubTime>2020-09-21T07:54:00.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-    
-    
-    
-  <url>
-    <loc>http://rosecabbage.cc/2018/04/03/typora-into/</loc>
-    <lastmod>2020-09-21T07:41:23.945Z</lastmod>
-    <data>
-        <display>
-        <title>typora - 这大概是我用过的最好的Markdown编辑器</title>
-        <pubTime>2018-04-03T04:04:34.000Z</pubTime>
-        
-        <tag>Markdown</tag>
-         
-        <tag>软件</tag>
-         
-         
-           
-             
-              <breadCrumb title="计算机" url="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-          
-             
-              <breadCrumb title="软件" url="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://rosecabbage.cc/2018/04/06/markdown/</loc>
-    <lastmod>2020-09-21T07:41:23.944Z</lastmod>
-    <data>
-        <display>
-        <title>Markdown指南</title>
-        <pubTime>2018-04-06T11:22:27.000Z</pubTime>
-        
-        <tag>Markdown</tag>
-         
-         
-           
-             
-              <breadCrumb title="计算机" url="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://rosecabbage.cc/2018/04/05/regular-expression-basic/</loc>
-    <lastmod>2020-09-21T07:41:23.944Z</lastmod>
-    <data>
-        <display>
-        <title>正则表达式（入门）</title>
-        <pubTime>2018-04-05T08:34:30.000Z</pubTime>
-        
-        <tag>正则表达式</tag>
-         
-        <tag>计算机</tag>
-         
-         
-           
-             
-              <breadCrumb title="计算机" url="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-3/</loc>
-    <lastmod>2020-09-21T07:41:23.942Z</lastmod>
+    <lastmod>2020-09-21T13:41:22.902Z</lastmod>
     <data>
         <display>
         <title>机器学习基石笔记（三）</title>
@@ -115,8 +29,75 @@
 
     
   <url>
+    <loc>http://rosecabbage.cc/2018/04/03/typora-into/</loc>
+    <lastmod>2020-09-21T13:40:16.160Z</lastmod>
+    <data>
+        <display>
+        <title>typora - 这大概是我用过的最好的Markdown编辑器</title>
+        <pubTime>2018-04-03T04:04:34.000Z</pubTime>
+        
+        <tag>Markdown</tag>
+         
+        <tag>软件</tag>
+         
+         
+           
+             
+              <breadCrumb title="计算机" url="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+          
+             
+              <breadCrumb title="软件" url="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/%E8%BD%AF%E4%BB%B6/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rosecabbage.cc/2018/04/05/regular-expression-basic/</loc>
+    <lastmod>2020-09-21T13:39:56.945Z</lastmod>
+    <data>
+        <display>
+        <title>正则表达式（入门）</title>
+        <pubTime>2018-04-05T08:34:30.000Z</pubTime>
+        
+        <tag>正则表达式</tag>
+         
+        <tag>计算机</tag>
+         
+         
+           
+             
+              <breadCrumb title="计算机" url="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://rosecabbage.cc/2018/04/06/markdown/</loc>
+    <lastmod>2020-09-21T13:39:46.806Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown指南</title>
+        <pubTime>2018-04-06T11:22:27.000Z</pubTime>
+        
+        <tag>Markdown</tag>
+         
+         
+           
+             
+              <breadCrumb title="计算机" url="http://rosecabbage.cc/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-2/</loc>
-    <lastmod>2020-09-21T07:41:23.939Z</lastmod>
+    <lastmod>2020-09-21T13:36:54.546Z</lastmod>
     <data>
         <display>
         <title>机器学习基石笔记（二）</title>
@@ -140,31 +121,8 @@
 
     
   <url>
-    <loc>http://rosecabbage.cc/2018/04/08/MOP/</loc>
-    <lastmod>2020-09-21T07:41:23.931Z</lastmod>
-    <data>
-        <display>
-        <title>多目标规划方法</title>
-        <pubTime>2018-04-08T04:58:39.000Z</pubTime>
-        
-        <tag>规划</tag>
-         
-         
-           
-             
-              <breadCrumb title="数学" url="http://rosecabbage.cc/categories/%E6%95%B0%E5%AD%A6/"/>
-          
-             
-              <breadCrumb title="优化" url="http://rosecabbage.cc/categories/%E6%95%B0%E5%AD%A6/%E4%BC%98%E5%8C%96/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://rosecabbage.cc/2018/04/10/Machine-Learning-Foundations-1/</loc>
-    <lastmod>2020-09-21T07:41:23.931Z</lastmod>
+    <lastmod>2020-09-21T13:36:42.114Z</lastmod>
     <data>
         <display>
         <title>机器学习基石笔记（一）</title>
@@ -186,4 +144,31 @@
     </data>
     </url>
 
+    
+  <url>
+    <loc>http://rosecabbage.cc/2018/04/08/MOP/</loc>
+    <lastmod>2020-09-21T13:32:25.222Z</lastmod>
+    <data>
+        <display>
+        <title>多目标规划方法</title>
+        <pubTime>2018-04-08T04:58:39.000Z</pubTime>
+        
+        <tag>规划</tag>
+         
+         
+           
+             
+              <breadCrumb title="数学" url="http://rosecabbage.cc/categories/%E6%95%B0%E5%AD%A6/"/>
+          
+             
+              <breadCrumb title="优化" url="http://rosecabbage.cc/categories/%E6%95%B0%E5%AD%A6/%E4%BC%98%E5%8C%96/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+    
+    
 </urlset>
